@@ -1,0 +1,61 @@
+{
+  "sigle": null,
+  "criteres_a_verifier": [
+    "Les accords de Pro-A signés avant le 1er janvier 2026 restent valables",
+    "Cas du CDD et de l’intérim : à vérifier"
+  ],
+  "ce_qui_est_finance": "Coûts de formation, pris en charge par l’OPCO sur demande de l’employeur.",
+  "montant_ou_plafond": "Durée maximale de 12 mois pour 150 à 450 heures de formation ; un accord d’entreprise ou de branche peut porter la durée à 36 mois et jusqu’à 2 100 heures.",
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "periode-reconversion",
+  "nom": "Période de reconversion professionnelle (remplace la Pro-A depuis 2026)",
+  "categorie": "employeur",
+  "publics_concernes": [
+    "Salariés du secteur privé souhaitant évoluer dans leur entreprise ou changer d’employeur"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "salarie_cdi",
+        "salarie_cdd"
+      ]
+    }
+  ],
+  "resume": "Depuis 2026, la période de reconversion professionnelle remplace la Pro-A. Elle permet à tout salarié du privé d’acquérir une qualification inscrite au RNCP ou un certificat de qualification professionnelle, pour une mobilité dans son entreprise (reconversion interne) ou chez un autre employeur (externe). Pendant la période interne, le salaire est maintenu. Les coûts de formation sont pris en charge par l’OPCO sur demande de l’employeur.",
+  "demarche": [
+    "L’employeur et le salarié remplissent le Cerfa 17613*01.",
+    "L’employeur dépose le dossier complet auprès de l’OPCO au plus tard 30 jours calendaires avant le début de la période.",
+    "L’OPCO se prononce sur le financement sous 20 jours calendaires."
+  ],
+  "sources": [
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13516",
+      "intitule": "Pro-A ou période de reconversion",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R75681",
+      "intitule": "Période de reconversion professionnelle interne ou externe",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

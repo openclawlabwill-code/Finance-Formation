@@ -1,0 +1,50 @@
+{
+  "sigle": null,
+  "criteres_a_verifier": [],
+  "ce_qui_est_finance": null,
+  "montant_ou_plafond": null,
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": true,
+  "acteur_regional": "cap_emploi",
+  "specificites_regionales": {},
+  "id": "cap-emploi",
+  "nom": "Cap emploi (accompagnement des personnes en situation de handicap)",
+  "categorie": "accompagnement",
+  "publics_concernes": [
+    "Personnes en situation de handicap ou ayant des difficultés de santé qui pèsent sur leur emploi, titulaires ou en démarche d’une reconnaissance de handicap"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "rqth",
+      "operateur": "in",
+      "valeurs": [
+        "oui"
+      ]
+    }
+  ],
+  "resume": "Cap emploi accompagne les personnes en situation de handicap dans la définition et la mise en œuvre de leur projet professionnel, la recherche d’emploi, le recrutement et la mobilisation des aides financières et techniques. L’accès suppose d’avoir une reconnaissance de handicap ou d’être en cours de démarche. L’organisme est aussi présent dans les agences France Travail.",
+  "demarche": [
+    "Localiser le Cap emploi le plus proche via le service en ligne.",
+    "Engager la démarche d’accompagnement."
+  ],
+  "sources": [
+    {
+      "url": "https://mes-aides.francetravail.fr/trouver-un-emploi/insertion-professionnelle/cap-emploi/accompagnement-vers-l-emploi-des-personnes-en-situation-de-handicap",
+      "intitule": "Accompagnement vers l’emploi des personnes en situation de handicap (Cap emploi)",
+      "organisme": "France Travail",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

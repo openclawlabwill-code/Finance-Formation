@@ -1,0 +1,53 @@
+{
+  "sigle": "PRF",
+  "criteres_a_verifier": [],
+  "ce_qui_est_finance": "Formations collectives gratuites achetées par la Région.",
+  "montant_ou_plafond": null,
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": true,
+  "acteur_regional": "conseil_regional",
+  "specificites_regionales": {},
+  "id": "programme-regional-formation",
+  "nom": "Programme régional de formation (formations financées par la Région)",
+  "categorie": "financement_region",
+  "publics_concernes": [
+    "Personnes en recherche d’emploi, inscrites ou non à France Travail, après validation par un conseiller"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "point_depart",
+      "operateur": "in",
+      "valeurs": [
+        "demandeur_emploi",
+        "jeune_sans_emploi"
+      ]
+    }
+  ],
+  "resume": "Dans le cadre du programme régional de formation, le Conseil régional achète des formations collectives adaptées aux besoins de compétences locaux. Elles sont gratuites pour la personne qui acquiert une qualification ou des compétences complémentaires. Le projet doit être validé avec un conseiller en évolution professionnelle et s’inscrire dans le projet personnalisé d’accès à l’emploi. Une rémunération est possible selon la situation (indemnisation par France Travail ou rémunération de stagiaire de la formation professionnelle versée par la Région).",
+  "demarche": [
+    "Rencontrer un conseiller (CEP / France Travail) pour valider le projet de formation.",
+    "Prendre contact avec l’organisme de formation et remplir les prérequis.",
+    "S’inscrire une fois l’accord de l’organisme et du conseiller obtenu.",
+    "Repérer les formations via « Trouver ma formation » ou l’application Ma formation (mention « financée par le Conseil régional »)."
+  ],
+  "sources": [
+    {
+      "url": "https://www.francetravail.fr/candidat/en-formation/mes-aides-financieres/le-programme-regional-de-formati.html",
+      "intitule": "Le Programme Régional de Formation (PRF)",
+      "organisme": "France Travail",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

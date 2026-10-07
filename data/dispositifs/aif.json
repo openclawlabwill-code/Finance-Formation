@@ -1,0 +1,53 @@
+{
+  "sigle": "AIF",
+  "criteres_a_verifier": [],
+  "ce_qui_est_finance": "Frais pédagogiques de la formation validée dans le PPAE.",
+  "montant_ou_plafond": null,
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": true,
+  "acteur_regional": "france_travail",
+  "specificites_regionales": {},
+  "id": "aif",
+  "nom": "Aide individuelle à la formation",
+  "categorie": "france_travail",
+  "publics_concernes": [
+    "Demandeurs d’emploi inscrits à France Travail, indemnisés ou non"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "de_indemnise",
+        "de_non_indemnise"
+      ]
+    }
+  ],
+  "resume": "L’aide individuelle à la formation de France Travail prend en charge des frais pédagogiques lorsque la formation ne peut pas être financée autrement : financement partiel insuffisant ou aucun autre financement possible. La formation doit être validée dans le projet personnalisé d’accès à l’emploi (PPAE). Elle couvre des formations éligibles au CPF (VAE, permis de conduire, création d’entreprise, bilan) ou, à défaut, des formations absentes des catalogues gratuits régionaux ou de France Travail.",
+  "demarche": [
+    "Demander un devis à l’organisme de formation.",
+    "Recevoir le devis dans son espace francetravail.fr ou l’application Ma formation, puis le valider.",
+    "France Travail vérifie la cohérence avec le projet de retour à l’emploi.",
+    "Recevoir la réponse (acceptation ou refus)."
+  ],
+  "sources": [
+    {
+      "url": "https://www.francetravail.fr/candidat/en-formation/mes-aides-financieres/laide-individuelle-a-la-formatio.html",
+      "intitule": "L’Aide individuelle à la formation (AIF)",
+      "organisme": "France Travail",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

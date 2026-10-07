@@ -1,0 +1,53 @@
+{
+  "sigle": "FAFCEA",
+  "criteres_a_verifier": [
+    "Le site officiel du FAFCEA n’a pas pu être consulté : critères, plafonds et démarches à vérifier directement auprès du fonds ou de la CMA",
+    "Demande à déposer au moins 1 mois avant le début de la formation (service-public)"
+  ],
+  "ce_qui_est_finance": null,
+  "montant_ou_plafond": null,
+  "statut": "a_verifier",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "fafcea",
+  "nom": "FAFCEA — formation des chefs d’entreprise artisanale",
+  "categorie": "faf_independants",
+  "publics_concernes": [
+    "Chefs d’entreprise artisanale"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "artisan"
+      ]
+    }
+  ],
+  "resume": "Selon service-public.gouv.fr, le fonds d’assurance formation compétent pour les artisans est le FAFCEA. Une prise en charge totale ou partielle est possible pour les travailleurs indépendants qui ont payé la contribution à la formation professionnelle, sur attestation Urssaf. Les modalités propres au FAFCEA n’ont pas été relues : fiche à vérifier.",
+  "demarche": [
+    "Obtenir l’attestation de contribution auprès de l’Urssaf.",
+    "Contacter le FAFCEA ou la CMA pour connaître les critères et déposer la demande avant la formation."
+  ],
+  "sources": [
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F31148",
+      "intitule": "Prise en charge de la formation des travailleurs indépendants",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

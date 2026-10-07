@@ -1,0 +1,71 @@
+{
+  "sigle": null,
+  "criteres_a_verifier": [
+    "Prise en compte des autres situations ouvrant droit (AAH, pension d’invalidité…) : voir la page officielle",
+    "Les aides complètent d’autres financements : les demandes aux autres organismes doivent être faites d’abord"
+  ],
+  "ce_qui_est_finance": "Surcoûts liés à la compensation du handicap en formation (pas les obligations générales d’accessibilité).",
+  "montant_ou_plafond": "Aide à l’embauche en contrat d’apprentissage ou de professionnalisation d’une personne en situation de handicap : jusqu’à 3 000 € (employeur). Aide à l’adaptation des situations de formation : montant selon étude.",
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": true,
+  "acteur_regional": "agefiph",
+  "specificites_regionales": {},
+  "id": "agefiph-aides-formation",
+  "nom": "Aides de l’Agefiph pour la formation (personnes en situation de handicap)",
+  "categorie": "agefiph_handicap",
+  "publics_concernes": [
+    "Personnes bénéficiaires de l’obligation d’emploi (RQTH, AAH, pension d’invalidité…), salariées du privé, demandeuses d’emploi ou en projet"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "rqth",
+      "operateur": "in",
+      "valeurs": [
+        "oui"
+      ]
+    }
+  ],
+  "resume": "L’Agefiph finance des solutions de compensation du handicap en formation, en complément d’autres financements, notamment des aides pour les employeurs qui recrutent en alternance et des aides à l’adaptation des situations de formation destinées aux organismes de formation et CFA. Les aides peuvent généralement être demandées avant l’entrée en formation et jusqu’à 6 mois après le début du projet. Un conseiller Agefiph peut être joint au 0 800 11 10 09 (gratuit).",
+  "demarche": [
+    "Faire les demandes de financement aux autres organismes.",
+    "Solliciter l’Agefiph, directement ou via un prescripteur (Cap emploi, France Travail, Mission locale), idéalement avant l’entrée en formation."
+  ],
+  "sources": [
+    {
+      "url": "https://www.agefiph.fr/aides-financieres",
+      "intitule": "Aides financières de l’Agefiph",
+      "organisme": "Agefiph",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.agefiph.fr/demarche/personne-handicapee-lagefiph-peut-elle-vous-aider",
+      "intitule": "Personne handicapée : l’Agefiph peut-elle vous aider ?",
+      "organisme": "Agefiph",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.agefiph.fr/centre-aide/se-former",
+      "intitule": "RQTH et formation rémunérée",
+      "organisme": "Agefiph",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.agefiph.fr/demarche/quelles-conditions-pouvez-vous-beneficier-des-solutions-de-lagefiph-1",
+      "intitule": "Conditions pour bénéficier des solutions de l’Agefiph",
+      "organisme": "Agefiph",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

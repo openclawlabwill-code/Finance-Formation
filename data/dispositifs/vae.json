@@ -1,0 +1,63 @@
+{
+  "sigle": "VAE",
+  "criteres_a_verifier": [
+    "Agents publics : France VAE est indiquée comme fermée pour eux, se rapprocher de leur service des ressources humaines",
+    "Certains diplômes ne sont pas accessibles par la VAE (exemple cité : diplôme de médecin)"
+  ],
+  "ce_qui_est_finance": "Accompagnement VAE, frais de jury, formations préalables obligatoires, déplacements et repas selon le financeur.",
+  "montant_ou_plafond": "Transitions Pro : forfait de 2 000 € depuis le 30 juillet 2026 (frais d’examen, accompagnement, formation obligatoire, évaluation, déplacements). CPF : accompagnement finançable sous conditions du décret 2025-663. Le financement doit être obtenu avant le début du parcours.",
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "vae",
+  "nom": "Validation des acquis de l’expérience",
+  "categorie": "certification",
+  "publics_concernes": [
+    "Toute personne, quels que soient son statut, son âge, sa nationalité ou son niveau de formation (salariés, demandeurs d’emploi, bénévoles, aidants, agents publics)"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "projet",
+      "operateur": "in",
+      "valeurs": [
+        "vae",
+        "certification_diplome",
+        "reconversion",
+        "montee_competences"
+      ]
+    }
+  ],
+  "resume": "La VAE permet d’obtenir un diplôme, un titre professionnel ou un certificat de qualification professionnelle grâce à son expérience. Le parcours passe par la plateforme France VAE : dépôt de la candidature, accompagnement facultatif, examen de recevabilité du dossier, rédaction du dossier de validation, puis présentation devant un jury. Un salarié peut demander un congé pour VAE (jusqu’à 48 heures par session d’évaluation selon la page consultée, préavis de 30 jours).",
+  "demarche": [
+    "Déposer sa candidature sur la plateforme France VAE.",
+    "Rechercher un financement avant de démarrer : CPF, employeur, OPCO, Région, France Travail ou Transitions Pro.",
+    "Faire valider la recevabilité, constituer le dossier, passer devant le jury."
+  ],
+  "sources": [
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2401",
+      "intitule": "Validation des acquis de l’expérience (VAE)",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://vae.gouv.fr/savoir-plus/articles/financer-son-accompagnement-vae/",
+      "intitule": "Financer son accompagnement VAE",
+      "organisme": "France VAE (État)",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "$id": "dispositif.json",
+  "type": "object",
+  "required": [
+    "id",
+    "nom",
+    "categorie",
+    "publics_concernes",
+    "criteres_eligibilite",
+    "resume",
+    "demarche",
+    "sources",
+    "date_derniere_verification",
+    "date_derniere_modification",
+    "statut",
+    "historique",
+    "portee_geographique",
+    "regions_concernees"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "commun.json#/definitions/identifiant"
+    },
+    "nom": {
+      "type": "string",
+      "minLength": 3
+    },
+    "sigle": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "categorie": {
+      "enum": [
+        "CPF",
+        "abondement",
+        "alternance",
+        "financement_region",
+        "france_travail",
+        "opco",
+        "faf_independants",
+        "transitions_pro",
+        "agefiph_handicap",
+        "accompagnement",
+        "certification",
+        "employeur",
+        "jeunes",
+        "autre"
+      ]
+    },
+    "publics_concernes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 2
+      }
+    },
+    "criteres_eligibilite": {
+      "type": "array",
+      "items": {
+        "$ref": "commun.json#/definitions/condition"
+      }
+    },
+    "criteres_a_verifier": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "resume": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 1200
+    },
+    "ce_qui_est_finance": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "montant_ou_plafond": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "demarche": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 3
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "commun.json#/definitions/source"
+      }
+    },
+    "date_derniere_verification": {
+      "type": "string",
+      "format": "date"
+    },
+    "date_derniere_modification": {
+      "type": "string",
+      "format": "date"
+    },
+    "statut": {
+      "$ref": "commun.json#/definitions/statutFiche"
+    },
+    "historique": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "action",
+          "resume"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "action": {
+            "enum": [
+              "creation",
+              "modification",
+              "verification",
+              "suppression",
+              "restauration"
+            ]
+          },
+          "resume": {
+            "type": "string"
+          },
+          "auteur": {
+            "type": "string"
+          },
+          "region": {
+            "$ref": "commun.json#/definitions/regionOuNational"
+          }
+        }
+      }
+    },
+    "portee_geographique": {
+      "enum": [
+        "national",
+        "regional",
+        "departemental",
+        "local"
+      ]
+    },
+    "regions_concernees": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(\\*|0[1-6]|[1-9][0-9])$"
+      }
+    },
+    "departements_concernes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(2[AB]|[0-9]{2,3})$"
+      }
+    },
+    "declinaison_regionale": {
+      "type": "boolean"
+    },
+    "acteur_regional": {
+      "anyOf": [
+        {
+          "$ref": "commun.json#/definitions/acteurRegional"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "specificites_regionales": {
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^(0[1-6]|[1-9][0-9])$": {
+          "type": "object",
+          "required": [
+            "statut",
+            "resume",
+            "sources",
+            "date_derniere_verification"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "statut": {
+              "enum": [
+                "actif",
+                "modifie",
+                "a_verifier"
+              ]
+            },
+            "resume": {
+              "type": "string",
+              "minLength": 10
+            },
+            "montants_conditions": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "contact": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "organisme": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "telephone": {
+                  "type": "string"
+                },
+                "departements": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "sources": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "commun.json#/definitions/source"
+              }
+            },
+            "date_derniere_verification": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        }
+      }
+    },
+    "criteres_ou": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "$ref": "commun.json#/definitions/condition"
+        }
+      }
+    }
+  }
+}

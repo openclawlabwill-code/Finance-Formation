@@ -1,0 +1,116 @@
+{
+  "$id": "sources.json",
+  "type": "object",
+  "required": [
+    "version",
+    "domaines_autorises",
+    "nationales",
+    "regions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "_note": {
+      "type": "string"
+    },
+    "domaines_autorises": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9.-]+\\.[a-z]{2,}$"
+      }
+    },
+    "nationales": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/entree"
+      }
+    },
+    "regions": {
+      "type": "object",
+      "patternProperties": {
+        "^(0[1-6]|[1-9][0-9])$": {
+          "type": "object",
+          "required": [
+            "nom",
+            "acteurs"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "nom": {
+              "type": "string"
+            },
+            "acteurs": {
+              "type": "object",
+              "additionalProperties": false,
+              "patternProperties": {
+                "^[a-z_]+$": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/entree"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "opco_prioritaires": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "definitions": {
+    "entree": {
+      "type": "object",
+      "required": [
+        "url",
+        "organisme",
+        "type",
+        "frequence",
+        "dispositifs",
+        "date_verification"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "organisme": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "page_web",
+            "rss",
+            "api"
+          ]
+        },
+        "frequence": {
+          "enum": [
+            "quotidienne",
+            "hebdomadaire",
+            "mensuelle"
+          ]
+        },
+        "dispositifs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "date_verification": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  }
+}

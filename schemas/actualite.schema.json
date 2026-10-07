@@ -1,0 +1,16 @@
+{
+  "$id": "actualite.json",
+  "type": "object",
+  "required": ["id","titre","date","region","dispositif_id","url","organisme"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "commun.json#/definitions/identifiant" },
+    "titre": { "type": "string", "minLength": 5, "maxLength": 160 },
+    "date": { "type": "string", "format": "date" },
+    "region": { "$ref": "commun.json#/definitions/regionOuNational" },
+    "dispositif_id": { "$ref": "commun.json#/definitions/identifiant" },
+    "url": { "type": "string", "format": "uri" },
+    "organisme": { "type": "string" },
+    "resume": { "type": "string", "maxLength": 400 }
+  }
+}

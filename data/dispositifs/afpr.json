@@ -1,0 +1,52 @@
+{
+  "sigle": "AFPR",
+  "criteres_a_verifier": [
+    "Conditions, durée et montants de l’AFPR : documentation officielle (fiche France Travail « Se former avant l’embauche POEI/AFPR ») non relue, à vérifier avec le conseiller"
+  ],
+  "ce_qui_est_finance": null,
+  "montant_ou_plafond": null,
+  "statut": "a_verifier",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "afpr",
+  "nom": "Action de formation préalable au recrutement",
+  "categorie": "france_travail",
+  "publics_concernes": [
+    "Demandeurs d’emploi inscrits à France Travail avant une embauche"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "de_indemnise",
+        "de_non_indemnise"
+      ]
+    }
+  ],
+  "resume": "L’AFPR est une aide de France Travail pour se former avant une embauche, présentée avec la POEI dans la documentation officielle « Se former avant l’embauche ». Les conditions précises n’ont pas été relues pour cette fiche : elle est donc marquée à vérifier. Se rapprocher du conseiller France Travail pour connaître les modalités applicables.",
+  "demarche": [
+    "Se rapprocher du conseiller France Travail pour connaître les modalités applicables."
+  ],
+  "sources": [
+    {
+      "url": "https://www.francetravail.fr/files/live/sites/PE/files/fichiers-en-telechargement/fichiers-en-telechargement---dem/com-574-Se-former-avant-embauche-POE_AFPR.pdf",
+      "intitule": "Se former avant l’embauche (POEI/AFPR)",
+      "organisme": "France Travail",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "version": 1,
+  "attributs": [
+    {
+      "id": "point_depart",
+      "label": "Situation de départ",
+      "valeurs": [
+        {
+          "id": "en_activite",
+          "label": "En activité professionnelle"
+        },
+        {
+          "id": "demandeur_emploi",
+          "label": "Demandeur d'emploi"
+        },
+        {
+          "id": "jeune_sans_emploi",
+          "label": "Jeune de moins de 26 ans sans emploi"
+        }
+      ]
+    },
+    {
+      "id": "statut",
+      "label": "Statut",
+      "valeurs": [
+        {
+          "id": "salarie_cdi",
+          "label": "Salarié en CDI"
+        },
+        {
+          "id": "salarie_cdd",
+          "label": "Salarié en CDD"
+        },
+        {
+          "id": "interim",
+          "label": "Intérimaire"
+        },
+        {
+          "id": "agent_public",
+          "label": "Agent public"
+        },
+        {
+          "id": "independant",
+          "label": "Travailleur indépendant"
+        },
+        {
+          "id": "artisan",
+          "label": "Artisan"
+        },
+        {
+          "id": "profession_liberale",
+          "label": "Profession libérale"
+        },
+        {
+          "id": "chef_entreprise",
+          "label": "Chef d'entreprise"
+        },
+        {
+          "id": "de_indemnise",
+          "label": "Demandeur d'emploi indemnisé"
+        },
+        {
+          "id": "de_non_indemnise",
+          "label": "Demandeur d'emploi non indemnisé"
+        }
+      ]
+    },
+    {
+      "id": "age_tranche",
+      "label": "Âge",
+      "valeurs": [
+        {
+          "id": "moins_16",
+          "label": "Moins de 16 ans"
+        },
+        {
+          "id": "16_25",
+          "label": "16 à 25 ans"
+        },
+        {
+          "id": "26_29",
+          "label": "26 à 29 ans"
+        },
+        {
+          "id": "30_44",
+          "label": "30 à 44 ans"
+        },
+        {
+          "id": "45_plus",
+          "label": "45 ans et plus"
+        }
+      ]
+    },
+    {
+      "id": "diplome",
+      "label": "Niveau de diplôme",
+      "valeurs": [
+        {
+          "id": "sans_qualification",
+          "label": "Sans qualification"
+        },
+        {
+          "id": "niveau_3",
+          "label": "CAP / BEP (niveau 3)"
+        },
+        {
+          "id": "niveau_4",
+          "label": "Baccalauréat (niveau 4)"
+        },
+        {
+          "id": "niveau_5_6",
+          "label": "Bac+2 / Bac+3 (niveaux 5-6)"
+        },
+        {
+          "id": "niveau_7_8",
+          "label": "Bac+5 et plus (niveaux 7-8)"
+        }
+      ]
+    },
+    {
+      "id": "anciennete",
+      "label": "Ancienneté / expérience",
+      "valeurs": [
+        {
+          "id": "moins_12_mois",
+          "label": "Moins de 12 mois"
+        },
+        {
+          "id": "12_24_mois",
+          "label": "12 à 24 mois"
+        },
+        {
+          "id": "plus_24_mois",
+          "label": "Plus de 24 mois"
+        }
+      ]
+    },
+    {
+      "id": "taille_entreprise",
+      "label": "Taille de l'entreprise",
+      "valeurs": [
+        {
+          "id": "moins_11",
+          "label": "Moins de 11 salariés"
+        },
+        {
+          "id": "11_49",
+          "label": "11 à 49 salariés"
+        },
+        {
+          "id": "50_249",
+          "label": "50 à 249 salariés"
+        },
+        {
+          "id": "250_plus",
+          "label": "250 salariés et plus"
+        }
+      ]
+    },
+    {
+      "id": "projet",
+      "label": "Type de projet",
+      "valeurs": [
+        {
+          "id": "reconversion",
+          "label": "Reconversion professionnelle"
+        },
+        {
+          "id": "montee_competences",
+          "label": "Montée en compétences"
+        },
+        {
+          "id": "certification_diplome",
+          "label": "Certification / diplôme"
+        },
+        {
+          "id": "vae",
+          "label": "Validation des acquis de l'expérience (VAE)"
+        },
+        {
+          "id": "creation_reprise",
+          "label": "Création / reprise d'entreprise"
+        },
+        {
+          "id": "bilan_competences",
+          "label": "Bilan de compétences"
+        }
+      ]
+    },
+    {
+      "id": "voie",
+      "label": "Voie de formation",
+      "valeurs": [
+        {
+          "id": "formation_continue",
+          "label": "Formation continue"
+        },
+        {
+          "id": "formation_initiale",
+          "label": "Formation initiale"
+        },
+        {
+          "id": "apprentissage",
+          "label": "Alternance : apprentissage"
+        },
+        {
+          "id": "professionnalisation",
+          "label": "Alternance : contrat de professionnalisation"
+        }
+      ]
+    },
+    {
+      "id": "rqth",
+      "label": "Situation de handicap (RQTH)",
+      "valeurs": [
+        {
+          "id": "oui",
+          "label": "Oui"
+        },
+        {
+          "id": "non",
+          "label": "Non"
+        }
+      ]
+    },
+    {
+      "id": "minima_sociaux",
+      "label": "Bénéficiaire de minima sociaux",
+      "valeurs": [
+        {
+          "id": "oui",
+          "label": "Oui"
+        },
+        {
+          "id": "non",
+          "label": "Non"
+        }
+      ]
+    },
+    {
+      "id": "temps_travail",
+      "label": "Temps de travail",
+      "valeurs": [
+        {
+          "id": "temps_plein",
+          "label": "Temps plein"
+        },
+        {
+          "id": "temps_partiel",
+          "label": "Temps partiel"
+        }
+      ]
+    },
+    {
+      "id": "initiative",
+      "label": "Initiative de la formation",
+      "valeurs": [
+        {
+          "id": "salarie",
+          "label": "Initiative du salarié"
+        },
+        {
+          "id": "employeur",
+          "label": "Initiative de l'employeur"
+        }
+      ]
+    }
+  ]
+}

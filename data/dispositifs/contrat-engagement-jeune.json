@@ -1,0 +1,80 @@
+{
+  "sigle": "CEJ",
+  "criteres_a_verifier": [
+    "Conditions de ressources et de situation (difficultés matérielles, projet non défini) à confirmer avec la Mission locale ou France Travail"
+  ],
+  "ce_qui_est_finance": null,
+  "montant_ou_plafond": "Allocation jusqu’à 561,68 € par mois (selon l’âge, les ressources, la situation fiscale et le respect des engagements).",
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": true,
+  "acteur_regional": "missions_locales",
+  "specificites_regionales": {},
+  "id": "contrat-engagement-jeune",
+  "nom": "Contrat d’engagement jeune",
+  "categorie": "jeunes",
+  "publics_concernes": [
+    "Jeunes de 16 à 25 ans (jusqu’à 29 ans en situation de handicap), sans emploi ni formation, sans projet professionnel défini et en difficulté matérielle"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "point_depart",
+      "operateur": "in",
+      "valeurs": [
+        "jeune_sans_emploi",
+        "demandeur_emploi"
+      ]
+    }
+  ],
+  "criteres_ou": [
+    [
+      {
+        "attribut": "age_tranche",
+        "operateur": "in",
+        "valeurs": [
+          "16_25"
+        ]
+      }
+    ],
+    [
+      {
+        "attribut": "age_tranche",
+        "operateur": "in",
+        "valeurs": [
+          "26_29"
+        ]
+      },
+      {
+        "attribut": "rqth",
+        "operateur": "in",
+        "valeurs": [
+          "oui"
+        ]
+      }
+    ]
+  ],
+  "resume": "Le contrat d’engagement jeune propose un accompagnement personnalisé avec un conseiller dédié, par une Mission locale ou France Travail selon le profil, pendant en général 12 mois (18 mois exceptionnellement). Le jeune s’engage sur 15 à 20 heures par semaine d’entretiens, d’ateliers, de stages et de périodes de formation. Une allocation mensuelle peut être versée selon l’âge, les ressources, la situation fiscale et le respect des engagements.",
+  "demarche": [
+    "Contacter la Mission locale ou France Travail (un questionnaire en ligne aide à choisir).",
+    "Signer le contrat avec le conseiller référent."
+  ],
+  "sources": [
+    {
+      "url": "https://www.1jeune1solution.gouv.fr/contrat-engagement-jeune",
+      "intitule": "Contrat d’engagement jeune",
+      "organisme": "1jeune1solution (État)",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

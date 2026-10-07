@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "_note": "Sources officielles uniquement. Chaque URL est ajoutée par vérification (date_verification) ; aucune URL écrite de mémoire. L'agent Hermes lit ce fichier pour savoir où chercher. Domaines institutionnels ajoutés après constat sur les pages : mon-cep.org (réseau CEP, cité par France compétences et Transitions Pro), artisanat.fr (portail officiel du réseau des CMA), fifpl.fr (FIF PL), communication-agefice.fr (AGEFICE).",
+  "domaines_autorises": [
+    "gouv.fr",
+    "service-public.fr",
+    "francecompetences.fr",
+    "francetravail.fr",
+    "transitionspro.fr",
+    "agefiph.fr",
+    "cma-france.fr",
+    "mon-cep.org",
+    "artisanat.fr",
+    "fifpl.fr",
+    "communication-agefice.fr"
+  ],
+  "nationales": [],
+  "regions": {
+    "11": {
+      "nom": "Île-de-France",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "24": {
+      "nom": "Centre-Val de Loire",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "27": {
+      "nom": "Bourgogne-Franche-Comté",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "28": {
+      "nom": "Normandie",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "32": {
+      "nom": "Hauts-de-France",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "44": {
+      "nom": "Grand Est",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "52": {
+      "nom": "Pays de la Loire",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "53": {
+      "nom": "Bretagne",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "75": {
+      "nom": "Nouvelle-Aquitaine",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "76": {
+      "nom": "Occitanie",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "84": {
+      "nom": "Auvergne-Rhône-Alpes",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "93": {
+      "nom": "Provence-Alpes-Côte d'Azur",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "94": {
+      "nom": "Corse",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "01": {
+      "nom": "Guadeloupe",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "02": {
+      "nom": "Martinique",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "03": {
+      "nom": "Guyane",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "04": {
+      "nom": "La Réunion",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    },
+    "06": {
+      "nom": "Mayotte",
+      "acteurs": {
+        "conseil_regional": [],
+        "transitions_pro": [],
+        "agefiph": [],
+        "cap_emploi": [],
+        "cma": [],
+        "cariforef": [],
+        "france_travail": [],
+        "missions_locales": [],
+        "dreets": [],
+        "opco": [],
+        "conseil_departemental": []
+      }
+    }
+  },
+  "opco_prioritaires": [
+    "Mobilités",
+    "EP (Opérateur de compétences des Entreprises de Proximité)",
+    "AKTO"
+  ]
+}

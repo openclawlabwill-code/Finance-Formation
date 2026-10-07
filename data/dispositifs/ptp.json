@@ -1,0 +1,77 @@
+{
+  "sigle": "PTP",
+  "criteres_a_verifier": [
+    "Ancienneté professionnelle minimale exigée : non détaillée sur les pages consultées, à confirmer auprès de Transitions Pro",
+    "Durée maximale et délais de dépôt de la demande : à confirmer"
+  ],
+  "ce_qui_est_finance": "Frais pédagogiques d’une formation certifiante (répertoire RNCP ou spécifique, organisme certifié Qualiopi) et maintien de la rémunération pendant la formation.",
+  "montant_ou_plafond": "Rémunération maintenue à 100 % du salaire de référence jusqu’à 2 SMIC et 90 % au-delà, selon les barèmes applicables (page Transitions Pro). Décision communiquée au plus tard 48 heures après la commission.",
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": true,
+  "acteur_regional": "transitions_pro",
+  "specificites_regionales": {},
+  "id": "ptp",
+  "nom": "Projet de transition professionnelle",
+  "categorie": "transitions_pro",
+  "publics_concernes": [
+    "Salariés du secteur privé en CDI, en CDD, intérimaires et intermittents du spectacle"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "salarie_cdi",
+        "salarie_cdd",
+        "interim"
+      ]
+    },
+    {
+      "attribut": "projet",
+      "operateur": "in",
+      "valeurs": [
+        "reconversion",
+        "certification_diplome"
+      ]
+    }
+  ],
+  "resume": "Le projet de transition professionnelle permet à un salarié du privé de suivre une formation certifiante pour changer de métier ou de profession, tout en conservant son contrat de travail et sa rémunération. La demande est instruite par l’association Transitions Pro après un conseil en évolution professionnelle, sur trois critères : cohérence du projet, perspectives d’emploi, pertinence de la formation. Le CPF est obligatoirement mobilisé dans la limite du coût pédagogique.",
+  "demarche": [
+    "Rencontrer un conseiller en évolution professionnelle (gratuit) pour construire le projet.",
+    "Constituer le dossier : cohérence du projet, perspectives d’emploi, pertinence de la formation.",
+    "Déposer la demande auprès de Transitions Pro de la région ; passage en commission paritaire.",
+    "Recevoir la décision sur l’espace personnel."
+  ],
+  "sources": [
+    {
+      "url": "https://www.transitionspro.fr/nos-dispositifs/projet-de-transition-professionnelle/",
+      "intitule": "Projet de Transition Professionnelle - PTP",
+      "organisme": "Transitions Pro",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.transitionspro.fr/faq/",
+      "intitule": "FAQ - Transitions Pro",
+      "organisme": "Transitions Pro",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.transitionspro.fr/blog/financer-reconversion/qui-finance-la-reconversion-professionnelle/comment-transitions-pro-finance-la-reconversion-des-salaries/",
+      "intitule": "Comment Transitions Pro finance la reconversion des salariés",
+      "organisme": "Transitions Pro",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

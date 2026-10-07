@@ -1,0 +1,60 @@
+{
+  "sigle": "PDC",
+  "criteres_a_verifier": [
+    "Appui éventuel de l’OPCO selon la taille de l’entreprise : voir la fiche « Financements des OPCO »"
+  ],
+  "ce_qui_est_finance": "Les formations décidées par l’employeur, bilan de compétences et VAE avec l’accord du salarié.",
+  "montant_ou_plafond": null,
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "plan-developpement-competences",
+  "nom": "Plan de développement des compétences (initiative de l’employeur)",
+  "categorie": "employeur",
+  "publics_concernes": [
+    "Salariés du secteur privé (y compris apprentis et alternants), à l’initiative de l’employeur"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "salarie_cdi",
+        "salarie_cdd"
+      ]
+    },
+    {
+      "attribut": "initiative",
+      "operateur": "in",
+      "valeurs": [
+        "employeur"
+      ]
+    }
+  ],
+  "resume": "Le plan de développement des compétences est le cadre dans lequel l’employeur définit sa politique de formation. Il concerne tous les salariés du privé sans condition d’ancienneté. Les formations obligatoires se déroulent sur le temps de travail avec maintien de la rémunération ; les formations non obligatoires peuvent se faire hors temps de travail dans certaines limites (30 heures par an et par salarié à défaut d’accord collectif), sans rémunération. L’employeur supporte les coûts.",
+  "demarche": [
+    "L’employeur propose la formation au salarié (accord écrit requis pour un bilan de compétences ou une VAE).",
+    "Pour les formations non obligatoires, le salarié peut refuser sans que ce soit une faute."
+  ],
+  "sources": [
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11267",
+      "intitule": "Plan de développement des compétences d’un salarié du secteur privé",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

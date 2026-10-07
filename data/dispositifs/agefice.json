@@ -1,0 +1,61 @@
+{
+  "sigle": "AGEFICE",
+  "criteres_a_verifier": [
+    "Critères et plafonds annuels de prise en charge : à consulter sur le site de l’AGEFICE (millésime en vigueur)",
+    "Demande à déposer au moins 1 mois avant le début de la formation (service-public)"
+  ],
+  "ce_qui_est_finance": null,
+  "montant_ou_plafond": null,
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "agefice",
+  "nom": "AGEFICE — formation des chefs d’entreprise commerçants, industriels et de services",
+  "categorie": "faf_independants",
+  "publics_concernes": [
+    "Chefs d’entreprise du commerce, de l’industrie et des services et leurs conjoints collaborateurs ou associés"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "chef_entreprise",
+        "independant"
+      ]
+    }
+  ],
+  "resume": "L’AGEFICE est le fonds d’assurance formation des chefs d’entreprise du commerce, de l’industrie et des services. Il finance des actions de formation selon des critères et des plafonds annuels fixés par son conseil d’administration, pour les dirigeants et leurs conjoints collaborateurs ou associés remplissant les conditions d’adhésion. La contribution à la formation professionnelle doit avoir été payée.",
+  "demarche": [
+    "Vérifier l’éligibilité (contribution payée, secteur d’activité).",
+    "Consulter les critères et plafonds de l’année.",
+    "Déposer la demande de prise en charge avant la formation, avec les justificatifs."
+  ],
+  "sources": [
+    {
+      "url": "https://communication-agefice.fr",
+      "intitule": "AGEFICE — Association de gestion du financement de la formation des chefs d’entreprise",
+      "organisme": "AGEFICE",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F31148",
+      "intitule": "Prise en charge de la formation des travailleurs indépendants",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

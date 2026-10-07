@@ -1,0 +1,350 @@
+{
+  "version": 2,
+  "racine": "depart",
+  "noeuds": [
+    {
+      "id": "depart",
+      "type": "situation",
+      "question": "Quelle est la situation du candidat ?",
+      "attribut": "point_depart",
+      "options": [
+        {
+          "valeur": "en_activite",
+          "label": "En activité professionnelle",
+          "next": "statut_actif"
+        },
+        {
+          "valeur": "demandeur_emploi",
+          "label": "Demandeur d'emploi",
+          "next": "statut_de"
+        },
+        {
+          "valeur": "jeune_sans_emploi",
+          "label": "Jeune de moins de 26 ans sans emploi",
+          "next": "age"
+        }
+      ]
+    },
+    {
+      "id": "statut_actif",
+      "type": "situation",
+      "question": "Quel est son statut professionnel ?",
+      "attribut": "statut",
+      "options": [
+        {
+          "valeur": "salarie_cdi",
+          "label": "Salarié en CDI",
+          "next": "anciennete"
+        },
+        {
+          "valeur": "salarie_cdd",
+          "label": "Salarié en CDD",
+          "next": "anciennete"
+        },
+        {
+          "valeur": "interim",
+          "label": "Intérimaire",
+          "next": "anciennete"
+        },
+        {
+          "valeur": "agent_public",
+          "label": "Agent public",
+          "next": "anciennete"
+        },
+        {
+          "valeur": "independant",
+          "label": "Travailleur indépendant",
+          "next": "age"
+        },
+        {
+          "valeur": "artisan",
+          "label": "Artisan",
+          "next": "age"
+        },
+        {
+          "valeur": "profession_liberale",
+          "label": "Profession libérale",
+          "next": "age"
+        },
+        {
+          "valeur": "chef_entreprise",
+          "label": "Chef d'entreprise",
+          "next": "age"
+        }
+      ]
+    },
+    {
+      "id": "statut_de",
+      "type": "situation",
+      "question": "Le demandeur d'emploi est-il indemnisé ?",
+      "attribut": "statut",
+      "options": [
+        {
+          "valeur": "de_indemnise",
+          "label": "Demandeur d'emploi indemnisé",
+          "next": "age"
+        },
+        {
+          "valeur": "de_non_indemnise",
+          "label": "Demandeur d'emploi non indemnisé",
+          "next": "age"
+        }
+      ]
+    },
+    {
+      "id": "anciennete",
+      "type": "critere",
+      "question": "Quelle est son ancienneté ou son expérience professionnelle ?",
+      "attribut": "anciennete",
+      "options": [
+        {
+          "valeur": "moins_12_mois",
+          "label": "Moins de 12 mois",
+          "next": "taille"
+        },
+        {
+          "valeur": "12_24_mois",
+          "label": "12 à 24 mois",
+          "next": "taille"
+        },
+        {
+          "valeur": "plus_24_mois",
+          "label": "Plus de 24 mois",
+          "next": "taille"
+        }
+      ]
+    },
+    {
+      "id": "taille",
+      "type": "critere",
+      "question": "Quelle est la taille de l'entreprise ?",
+      "attribut": "taille_entreprise",
+      "options": [
+        {
+          "valeur": "moins_11",
+          "label": "Moins de 11 salariés",
+          "next": "initiative"
+        },
+        {
+          "valeur": "11_49",
+          "label": "11 à 49 salariés",
+          "next": "initiative"
+        },
+        {
+          "valeur": "50_249",
+          "label": "50 à 249 salariés",
+          "next": "initiative"
+        },
+        {
+          "valeur": "250_plus",
+          "label": "250 salariés et plus",
+          "next": "initiative"
+        }
+      ]
+    },
+    {
+      "id": "initiative",
+      "type": "critere",
+      "question": "Qui est à l'initiative de la formation ?",
+      "attribut": "initiative",
+      "options": [
+        {
+          "valeur": "salarie",
+          "label": "Initiative du salarié",
+          "next": "temps"
+        },
+        {
+          "valeur": "employeur",
+          "label": "Initiative de l'employeur",
+          "next": "temps"
+        }
+      ]
+    },
+    {
+      "id": "temps",
+      "type": "critere",
+      "question": "Quel est son temps de travail ?",
+      "attribut": "temps_travail",
+      "options": [
+        {
+          "valeur": "temps_plein",
+          "label": "Temps plein",
+          "next": "age"
+        },
+        {
+          "valeur": "temps_partiel",
+          "label": "Temps partiel",
+          "next": "age"
+        }
+      ]
+    },
+    {
+      "id": "age",
+      "type": "critere",
+      "question": "Quelle est sa tranche d'âge ?",
+      "attribut": "age_tranche",
+      "options": [
+        {
+          "valeur": "moins_16",
+          "label": "Moins de 16 ans",
+          "next": "diplome"
+        },
+        {
+          "valeur": "16_25",
+          "label": "16 à 25 ans",
+          "next": "diplome"
+        },
+        {
+          "valeur": "26_29",
+          "label": "26 à 29 ans",
+          "next": "diplome"
+        },
+        {
+          "valeur": "30_44",
+          "label": "30 à 44 ans",
+          "next": "diplome"
+        },
+        {
+          "valeur": "45_plus",
+          "label": "45 ans et plus",
+          "next": "diplome"
+        }
+      ]
+    },
+    {
+      "id": "diplome",
+      "type": "critere",
+      "question": "Quel est son niveau de diplôme ?",
+      "attribut": "diplome",
+      "options": [
+        {
+          "valeur": "sans_qualification",
+          "label": "Sans qualification",
+          "next": "projet"
+        },
+        {
+          "valeur": "niveau_3",
+          "label": "CAP / BEP (niveau 3)",
+          "next": "projet"
+        },
+        {
+          "valeur": "niveau_4",
+          "label": "Baccalauréat (niveau 4)",
+          "next": "projet"
+        },
+        {
+          "valeur": "niveau_5_6",
+          "label": "Bac+2 / Bac+3 (niveaux 5-6)",
+          "next": "projet"
+        },
+        {
+          "valeur": "niveau_7_8",
+          "label": "Bac+5 et plus (niveaux 7-8)",
+          "next": "projet"
+        }
+      ]
+    },
+    {
+      "id": "projet",
+      "type": "critere",
+      "question": "Quel est le type de projet ?",
+      "attribut": "projet",
+      "options": [
+        {
+          "valeur": "reconversion",
+          "label": "Reconversion professionnelle",
+          "next": "voie"
+        },
+        {
+          "valeur": "montee_competences",
+          "label": "Montée en compétences",
+          "next": "voie"
+        },
+        {
+          "valeur": "certification_diplome",
+          "label": "Certification / diplôme",
+          "next": "voie"
+        },
+        {
+          "valeur": "vae",
+          "label": "Validation des acquis de l'expérience (VAE)",
+          "next": "voie"
+        },
+        {
+          "valeur": "creation_reprise",
+          "label": "Création / reprise d'entreprise",
+          "next": "voie"
+        },
+        {
+          "valeur": "bilan_competences",
+          "label": "Bilan de compétences",
+          "next": "voie"
+        }
+      ]
+    },
+    {
+      "id": "voie",
+      "type": "critere",
+      "question": "Quelle voie de formation est envisagée ?",
+      "attribut": "voie",
+      "options": [
+        {
+          "valeur": "formation_continue",
+          "label": "Formation continue",
+          "next": "rqth"
+        },
+        {
+          "valeur": "formation_initiale",
+          "label": "Formation initiale",
+          "next": "rqth"
+        },
+        {
+          "valeur": "apprentissage",
+          "label": "Alternance : apprentissage",
+          "next": "rqth"
+        },
+        {
+          "valeur": "professionnalisation",
+          "label": "Alternance : contrat de professionnalisation",
+          "next": "rqth"
+        }
+      ]
+    },
+    {
+      "id": "rqth",
+      "type": "critere",
+      "question": "Le candidat est-il reconnu travailleur handicapé (RQTH) ?",
+      "attribut": "rqth",
+      "options": [
+        {
+          "valeur": "oui",
+          "label": "Oui",
+          "next": "minima"
+        },
+        {
+          "valeur": "non",
+          "label": "Non",
+          "next": "minima"
+        }
+      ]
+    },
+    {
+      "id": "minima",
+      "type": "critere",
+      "question": "Perçoit-il des minima sociaux ?",
+      "attribut": "minima_sociaux",
+      "options": [
+        {
+          "valeur": "oui",
+          "label": "Oui",
+          "next": null
+        },
+        {
+          "valeur": "non",
+          "label": "Non",
+          "next": null
+        }
+      ]
+    }
+  ]
+}

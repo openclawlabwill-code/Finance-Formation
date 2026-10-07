@@ -1,0 +1,40 @@
+{
+  "$id": "arbre.json",
+  "type": "object",
+  "required": ["version","racine","noeuds"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "integer", "minimum": 1 },
+    "racine": { "type": "string" },
+    "noeuds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id","type","question","attribut","options"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+          "type": { "enum": ["situation","critere"] },
+          "question": { "type": "string", "minLength": 5 },
+          "aide": { "type": "string" },
+          "attribut": { "type": "string", "pattern": "^[a-z_0-9]+$" },
+          "options": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["valeur","label","next"],
+              "additionalProperties": false,
+              "properties": {
+                "valeur": { "type": "string" },
+                "label": { "type": "string", "minLength": 1 },
+                "next": { "type": ["string","null"] }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "sigle": null,
+  "criteres_a_verifier": [
+    "Fonctionnement du Conseil de la formation : non documenté sur les pages consultées, à vérifier auprès de la CMA",
+    "Aides propres à chaque CMA régionale à documenter"
+  ],
+  "ce_qui_est_finance": null,
+  "montant_ou_plafond": null,
+  "statut": "a_verifier",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": true,
+  "acteur_regional": "cma",
+  "specificites_regionales": {},
+  "id": "conseil-formation-artisans",
+  "nom": "Conseil de la formation (artisans) et accompagnement par les CMA",
+  "categorie": "faf_independants",
+  "publics_concernes": [
+    "Artisans, selon les modalités du réseau des Chambres de métiers et de l’artisanat"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "artisan"
+      ]
+    }
+  ],
+  "resume": "Le réseau des CMA propose une ingénierie de financement de la formation : à quel prix et avec quelles aides financières possibles. Les conseillers peuvent accompagner l’élaboration du projet de formation. Les règles du Conseil de la formation n’ont pas pu être confirmées à partir des pages consultées : fiche à vérifier auprès de la CMA du territoire.",
+  "demarche": [
+    "Contacter la CMA du territoire pour construire le projet de formation et son plan de financement."
+  ],
+  "sources": [
+    {
+      "url": "https://www.artisanat.fr/formation/se-former-tout-long-vie-choisir-reseau-cma",
+      "intitule": "Se former tout au long de la vie : choisir le réseau CMA",
+      "organisme": "CMA France",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

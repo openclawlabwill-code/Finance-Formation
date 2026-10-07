@@ -1,0 +1,34 @@
+/* Charte graphique : toutes les couleurs et tailles ici, dans :root. */
+:root {
+  --bleu-marine: #0b2a5b;
+  --bleu-institutionnel: #1b4f9c;
+  --bleu-clair: #e6eefa;
+  --accent: #f2a900;          /* jaune chaleureux, à utiliser avec parcimonie */
+  --accent-sombre: #8a5f00;
+  --fond: #f4f6f9;
+  --surface: #ffffff;
+  --texte: #1a2433;
+  --texte-secondaire: #4a5568;
+  --bordure: #d3dbe6;
+  --ok: #1e7b4b;
+  --alerte: #b42318;
+  --noeud-situation: #0b2a5b;
+  --noeud-critere: #1b4f9c;
+  --noeud-dispositif: #1e7b4b;
+  --rayon: 10px;
+  --police: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: var(--police); background: var(--fond); color: var(--texte); line-height: 1.5; }
+header.bandeau-titre { background: var(--bleu-marine); color: #fff; padding: 14px 24px; border-bottom: 4px solid var(--accent); }
+header.bandeau-titre h1 { margin: 0; font-size: 1.25rem; font-weight: 600; }
+main { max-width: 960px; margin: 24px auto; padding: 0 16px; }
+.carte { background: var(--surface); border: 1px solid var(--bordure); border-radius: var(--rayon); padding: 16px 20px; margin-bottom: 16px; }
+.carte h2 { margin-top: 0; font-size: 1.05rem; color: var(--bleu-marine); }
+.badge { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: .8rem; background: var(--bleu-clair); color: var(--bleu-marine); }
+.badge.ok { background: #e3f4ea; color: var(--ok); }
+.badge.alerte { background: #fde8e6; color: var(--alerte); }
+a { color: var(--bleu-institutionnel); }
+a:focus-visible, button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+select, button { font: inherit; padding: 6px 10px; border-radius: 6px; border: 1px solid var(--bordure); background: #fff; }
+[hidden]{display:none!important}

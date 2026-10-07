@@ -1,0 +1,60 @@
+{
+  "sigle": "FIF PL",
+  "criteres_a_verifier": [
+    "Budget annuel et critères de prise en charge selon le code NAF et la profession : à consulter sur fifpl.fr",
+    "Demande à déposer au moins 1 mois avant le début de la formation (service-public)"
+  ],
+  "ce_qui_est_finance": "Frais pédagogiques seulement (hors repas, transport, hébergement), dans la limite des critères du fonds.",
+  "montant_ou_plafond": null,
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "fif-pl",
+  "nom": "FIF PL — formation des professionnels libéraux",
+  "categorie": "faf_independants",
+  "publics_concernes": [
+    "Professionnels libéraux (architectes, avocats, professionnels de santé, ingénieurs…) ayant payé la contribution à la formation professionnelle"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "profession_liberale"
+      ]
+    }
+  ],
+  "resume": "Le FIF PL est le fonds d’assurance formation des professionnels libéraux. Il finance des actions de formation pour développer leurs compétences. L’éligibilité et les thèmes finançables dépendent du code NAF indiqué par l’Urssaf et de la profession. La contribution à la formation professionnelle doit avoir été acquittée et la demande déposée au moins un mois avant la formation.",
+  "demarche": [
+    "Obtenir l’attestation de versement de la contribution auprès de l’Urssaf.",
+    "Vérifier les critères de prise en charge sur fifpl.fr avec son code NAF.",
+    "Déposer la demande avant la formation."
+  ],
+  "sources": [
+    {
+      "url": "https://www.fifpl.fr",
+      "intitule": "FIF PL — Fonds Interprofessionnel de Formation des Professionnels Libéraux",
+      "organisme": "FIF PL",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F31148",
+      "intitule": "Prise en charge de la formation des travailleurs indépendants",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

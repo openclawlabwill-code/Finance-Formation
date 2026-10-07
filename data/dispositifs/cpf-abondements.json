@@ -1,0 +1,68 @@
+{
+  "sigle": null,
+  "criteres_a_verifier": [
+    "Cofinancement minimal de 150 € pour être exonéré de la majoration du 2 octobre 2026 : à confirmer",
+    "Autres financeurs (Région, OPCO) : conditions variables, à vérifier avec le financeur"
+  ],
+  "ce_qui_est_finance": "Le reste à financer d’une formation éligible au CPF lorsque les droits du titulaire sont insuffisants.",
+  "montant_ou_plafond": null,
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "cpf-abondements",
+  "nom": "Abondements du CPF (employeur, France Travail, autres financeurs)",
+  "categorie": "abondement",
+  "publics_concernes": [
+    "Salariés dont l’employeur abonde le CPF",
+    "Demandeurs d’emploi dont les droits CPF sont insuffisants"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "point_depart",
+      "operateur": "in",
+      "valeurs": [
+        "en_activite",
+        "demandeur_emploi"
+      ]
+    }
+  ],
+  "resume": "Lorsque les droits CPF ne couvrent pas le coût de la formation, un tiers peut compléter le financement. L’employeur peut créditer une dotation volontaire, utilisée en priorité à l’achat de la formation. Un demandeur d’emploi peut demander un abondement à France Travail via moncompteformation.gouv.fr, avec une réponse sous 10 jours ouvrés maximum. Le cofinancement peut aussi réduire ou supprimer la participation financière obligatoire.",
+  "demarche": [
+    "Salarié : choisir la formation, vérifier ses droits, présenter la proposition à l’employeur, qui attribue la dotation sur la plateforme employeur.",
+    "Demandeur d’emploi : cliquer sur « faire une demande d’aide au financement » et expliquer au conseiller France Travail en quoi la formation sert le retour à l’emploi ; la formation doit débuter plus de 21 jours ouvrés après la demande (selon la page officielle).",
+    "Vérifier que la rémunération est assurée pendant toute la durée de la formation : cette vérification relève du candidat."
+  ],
+  "sources": [
+    {
+      "url": "https://www.moncompteformation.gouv.fr/espace-public/dotation-volontaire-employeur",
+      "intitule": "Mes financements complémentaires CPF - Employeur",
+      "organisme": "Mon Compte Formation (Caisse des Dépôts / État)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.moncompteformation.gouv.fr/espace-public/je-suis-demandeur-demploi-comment-fonctionne-laide-france-travail",
+      "intitule": "Mes financements complémentaires CPF - France Travail",
+      "organisme": "Mon Compte Formation (Caisse des Dépôts / État)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.francetravail.fr/candidat/en-formation/mes-aides-financieres/le-compte-personnel-de-formation.html",
+      "intitule": "Le Compte Personnel de Formation (CPF)",
+      "organisme": "France Travail",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

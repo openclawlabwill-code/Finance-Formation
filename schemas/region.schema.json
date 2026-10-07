@@ -1,0 +1,44 @@
+{
+  "$id": "region.json",
+  "type": "object",
+  "required": ["version","regions"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "integer" },
+    "_note": { "type": "string" },
+    "regions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["code","nom","type","statut_documentation","active","departements"],
+        "additionalProperties": false,
+        "properties": {
+          "code": { "$ref": "commun.json#/definitions/codeRegion" },
+          "nom": { "type": "string" },
+          "type": { "enum": ["metropole","outre-mer"] },
+          "site_conseil_regional": {
+            "type": ["object","null"],
+            "required": ["url","date_verification"],
+            "additionalProperties": false,
+            "properties": {
+              "url": { "type": "string", "format": "uri" },
+              "date_verification": { "type": "string", "format": "date" }
+            }
+          },
+          "statut_documentation": { "enum": ["non_documente","en_cours","documente"] },
+          "active": { "type": "boolean" },
+          "departements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["code","nom"],
+              "additionalProperties": false,
+              "properties": { "code": { "type": "string" }, "nom": { "type": "string" } }
+            }
+          }
+        }
+      }
+    }
+  }
+}

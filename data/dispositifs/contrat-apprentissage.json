@@ -1,0 +1,97 @@
+{
+  "sigle": null,
+  "criteres_a_verifier": [
+    "Aides à l’embauche pour l’employeur (apprentissage) : montants 2026 non lus sur les pages officielles accessibles, à vérifier",
+    "Au-delà de 29 ans : vérifier que l’exception invoquée s’applique"
+  ],
+  "ce_qui_est_finance": null,
+  "montant_ou_plafond": "Rémunération de 27 % à 100 % du SMIC selon l’âge et l’année (service-public). Agefiph : aide à l’embauche d’un apprenti en situation de handicap jusqu’à 3 000 € pour l’employeur.",
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "contrat-apprentissage",
+  "nom": "Contrat d’apprentissage",
+  "categorie": "alternance",
+  "publics_concernes": [
+    "Jeunes de 16 à 29 ans (dès 15 ans après la 3e), avec des exceptions : personnes handicapées, créateurs ou repreneurs d’entreprise, sportifs de haut niveau, nouvelle tentative de diplôme"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "voie",
+      "operateur": "in",
+      "valeurs": [
+        "apprentissage"
+      ]
+    }
+  ],
+  "criteres_ou": [
+    [
+      {
+        "attribut": "age_tranche",
+        "operateur": "in",
+        "valeurs": [
+          "moins_16",
+          "16_25",
+          "26_29"
+        ]
+      }
+    ],
+    [
+      {
+        "attribut": "rqth",
+        "operateur": "in",
+        "valeurs": [
+          "oui"
+        ]
+      }
+    ],
+    [
+      {
+        "attribut": "projet",
+        "operateur": "in",
+        "valeurs": [
+          "creation_reprise"
+        ]
+      }
+    ]
+  ],
+  "resume": "Le contrat d’apprentissage est un contrat de travail alternant formation en centre et pratique en entreprise, pour préparer un diplôme ou un titre (CAP, bac pro, BTS, BUT, licence pro, master…). L’apprenti est un salarié à part entière. La durée va de 6 mois à 3 ans selon le diplôme, avec une année supplémentaire possible pour une personne handicapée ou un sportif de haut niveau. La rémunération augmente avec l’âge et l’année de formation.",
+  "demarche": [
+    "Choisir le diplôme et le centre de formation (CFA).",
+    "Trouver un employeur et signer le contrat.",
+    "Pour l’employeur : déclarer le contrat et solliciter les aides applicables."
+  ],
+  "sources": [
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F39004",
+      "intitule": "Alternance : je souhaite devenir alternant",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.1jeune1solution.gouv.fr/articles/le-contrat-d-apprentissage-pour-qui-quelle-duree-quels-avantages",
+      "intitule": "Le contrat d’apprentissage : pour qui, quelle durée, quels avantages ?",
+      "organisme": "1jeune1solution (État)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.agefiph.fr/aides-financieres",
+      "intitule": "Aides financières de l’Agefiph",
+      "organisme": "Agefiph",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

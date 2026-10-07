@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FinanceForma — financement de la formation</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <header class="bandeau-titre">
+    <h1>FinanceForma</h1>
+    <div class="barre-actions">
+      <button id="badge-region" class="badge-region" type="button" aria-haspopup="dialog" title="Modifier la région">Région</button>
+      <button id="btn-historique" type="button">Historique</button>
+      <button id="btn-vue" type="button">Vue liste</button>
+      <button id="btn-nouvelle" class="primaire" type="button">Nouvelle étude</button>
+    </div>
+  </header>
+  <div id="bandeau-actualites" role="region" aria-label="Actualités">Actualités : bientôt disponibles.</div>
+  <nav id="fil" aria-label="Fil d’Ariane"></nav>
+  <div class="mise-en-page">
+    <section id="zone-carte" aria-label="Carte mentale du parcours">
+      <div id="zone-svg" style="height:100%">
+        <svg id="carte" role="group" aria-label="Carte mentale : chaque nœud est un bouton ; une vue liste équivalente est disponible"></svg>
+        <div class="controles-zoom" role="toolbar" aria-label="Zoom de la carte">
+          <button id="zoom-suivre" type="button" title="Recentrer sur la question en cours">⌖</button>
+          <button id="zoom-tout" type="button" title="Tout voir">⤢</button>
+          <button id="zoom-moins" type="button" aria-label="Dézoomer">−</button>
+          <button id="zoom-plus" type="button" aria-label="Zoomer">+</button>
+        </div>
+      </div>
+      <div id="vue-liste" hidden></div>
+    </section>
+    <aside id="panneau" aria-live="polite" aria-label="Question en cours et dispositifs"></aside>
+  </div>
+  <main id="ecran-synthese" class="ecran-doc" hidden></main>
+  <main id="ecran-historique" class="ecran-doc" hidden></main>
+  <dialog id="dialogue-region" aria-labelledby="dlg-titre">
+    <form method="dialog" class="formulaire">
+      <h2 id="dlg-titre">Changer de région</h2>
+      <p class="petit">Le parcours est conservé ; la liste des dispositifs est recalculée.</p>
+      <label for="dlg-region">Région</label>
+      <select id="dlg-region"></select>
+      <div style="margin-top:14px;display:flex;gap:8px">
+        <button class="principal" value="ok">Appliquer</button>
+        <button class="secondaire" value="annuler">Annuler</button>
+      </div>
+    </form>
+  </dialog>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

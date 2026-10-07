@@ -1,0 +1,8 @@
+node_modules/
+.env
+data/etudes/*.json
+data/backups/*
+data/propositions/*.json
+data/journal-maj.log
+!data/**/.gitkeep
+.DS_Store

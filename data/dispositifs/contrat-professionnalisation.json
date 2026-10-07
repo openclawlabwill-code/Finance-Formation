@@ -1,0 +1,96 @@
+{
+  "sigle": null,
+  "criteres_a_verifier": [
+    "Détail des situations éligibles selon l’âge (formation initiale terminée, sans qualification, inscription depuis plus d’un an…) : voir la page officielle"
+  ],
+  "ce_qui_est_finance": null,
+  "montant_ou_plafond": "Rémunération minimale : 55 % du SMIC avant 21 ans (65 % avec un bac pro ou titre équivalent), 70 % de 21 à 25 ans (80 % avec un tel diplôme), SMIC ou 85 % du minimum conventionnel à partir de 26 ans (le plus favorable). Aide employeur : 2 000 € pour l’embauche d’un demandeur d’emploi de 26 ans et plus (aides cumulables jusqu’à 4 000 € à partir de 45 ans), versée en deux fois ; Agefiph : jusqu’à 3 000 € pour une personne en situation de handicap.",
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "contrat-professionnalisation",
+  "nom": "Contrat de professionnalisation",
+  "categorie": "alternance",
+  "publics_concernes": [
+    "Jeunes de 16 à 25 ans, demandeurs d’emploi, bénéficiaires de minima sociaux (RSA, ASS, AAH)"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "voie",
+      "operateur": "in",
+      "valeurs": [
+        "professionnalisation"
+      ]
+    }
+  ],
+  "criteres_ou": [
+    [
+      {
+        "attribut": "age_tranche",
+        "operateur": "in",
+        "valeurs": [
+          "moins_16",
+          "16_25"
+        ]
+      }
+    ],
+    [
+      {
+        "attribut": "statut",
+        "operateur": "in",
+        "valeurs": [
+          "de_indemnise",
+          "de_non_indemnise"
+        ]
+      }
+    ],
+    [
+      {
+        "attribut": "minima_sociaux",
+        "operateur": "in",
+        "valeurs": [
+          "oui"
+        ]
+      }
+    ]
+  ],
+  "resume": "Le contrat de professionnalisation est un contrat de travail alternant enseignements et pratique en entreprise pour acquérir une qualification. Il s’adresse aux jeunes de 16 à 25 ans, aux demandeurs d’emploi de 26 ans et plus et aux bénéficiaires du RSA, de l’ASS ou de l’AAH. Il dure en principe de 6 à 12 mois (jusqu’à 24 ou 36 mois selon les cas) et comprend au moins 150 heures de formation. L’employeur transmet le contrat à son OPCO dans les 5 jours.",
+  "demarche": [
+    "Trouver un employeur et un organisme de formation.",
+    "L’employeur transmet le contrat à l’OPCO sous 5 jours calendaires.",
+    "Aide à l’embauche d’un demandeur d’emploi : demande à France Travail dans les 3 mois suivant le début du contrat."
+  ],
+  "sources": [
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15478",
+      "intitule": "Contrat de professionnalisation",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F35391",
+      "intitule": "Aide à l’embauche en contrat de professionnalisation",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F39004",
+      "intitule": "Alternance : je souhaite devenir alternant",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

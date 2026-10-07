@@ -1,0 +1,75 @@
+{
+  "sigle": "CPF",
+  "criteres_a_verifier": [
+    "Participation financière applicable à compter du 2 octobre 2026 : montant exact à confirmer sur la page officielle (loi de finances 2027 attendue)",
+    "Exonération des demandeurs d’emploi : les pages officielles consultées divergent selon la date d’application, à vérifier avant d’annoncer un reste à charge"
+  ],
+  "ce_qui_est_finance": "Formations certifiantes (répertoires RNCP et spécifique), bilan de compétences, accompagnement VAE, formations à la création ou reprise d’entreprise, permis de conduire sous conditions.",
+  "montant_ou_plafond": "Alimentation : 500 € par an pour un salarié à temps plein (proratisé à temps partiel), plafond de 5 000 € ; 800 € par an et plafond de 8 000 € pour certaines situations (dont les personnes en situation de handicap). Plafonds d’usage depuis le 20 février 2026 : permis B 900 € (demandeurs d’emploi ou salariés avec cofinancement), bilan de compétences 1 600 €, certifications du répertoire spécifique 1 500 € (CléA non plafonné) ; certifications RNCP non plafonnées. Participation financière obligatoire : 150 € depuis le 1er avril 2026, revalorisée par décret ; pour les demandes validées à partir du 2 octobre 2026, une majoration (complément pouvant atteindre 200 € en 2027) est annoncée avec des exonérations (secteurs prioritaires, cofinancement d’au moins 150 €, VAE, projets de transition professionnelle) : montants à confirmer.",
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "cpf",
+  "nom": "Compte personnel de formation",
+  "categorie": "CPF",
+  "publics_concernes": [
+    "Toute personne active, de son entrée sur le marché du travail jusqu’à la retraite (salariés, indépendants, demandeurs d’emploi)"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "point_depart",
+      "operateur": "in",
+      "valeurs": [
+        "en_activite",
+        "demandeur_emploi"
+      ]
+    }
+  ],
+  "resume": "Chaque personne active dispose d’un compte personnel de formation alimenté chaque année et mobilisable sur moncompteformation.gouv.fr. Il finance des formations certifiantes, un bilan de compétences, un accompagnement VAE et certaines formations (permis de conduire sous conditions, création ou reprise d’entreprise). Hors temps de travail, aucun accord de l’employeur n’est requis. Les droits sont conservés en cas de changement d’emploi ou de chômage.",
+  "demarche": [
+    "Consulter ses droits sur moncompteformation.gouv.fr.",
+    "Choisir une formation éligible au CPF.",
+    "Hors temps de travail : s’inscrire directement. Sur le temps de travail : demander l’accord de l’employeur (délai de prévenance de 60 jours, 120 jours si la formation dépasse 6 mois).",
+    "Régler la participation financière lorsqu’elle s’applique.",
+    "Si les droits sont insuffisants : demander un abondement (voir la fiche « Abondements du CPF »)."
+  ],
+  "sources": [
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10705",
+      "intitule": "Compte personnel de formation (CPF)",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.moncompteformation.gouv.fr/espace-public/une-participation-financiere-obligatoire-pour-mobiliser-vos-droits-cpf",
+      "intitule": "Une participation financière obligatoire pour mobiliser vos droits CPF",
+      "organisme": "Mon Compte Formation (Caisse des Dépôts / État)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.moncompteformation.gouv.fr/espace-public/de-nouvelles-regles-pour-mobiliser-votre-cpf",
+      "intitule": "Plafonnement des droits CPF pour certaines formations et situations",
+      "organisme": "Mon Compte Formation (Caisse des Dépôts / État)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.moncompteformation.gouv.fr/espace-public/evolution-des-regles-dutilisation-du-cpf-compter-du-2-octobre-2026",
+      "intitule": "Évolution des règles d’utilisation du CPF à compter du 2 octobre 2026",
+      "organisme": "Mon Compte Formation (Caisse des Dépôts / État)",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "sigle": "OPCO",
+  "criteres_a_verifier": [
+    "Identifier l’OPCO dont relève la branche de l’employeur",
+    "Conditions de prise en charge propres à chaque OPCO (Mobilités, EP, AKTO…) à vérifier directement auprès de l’opérateur"
+  ],
+  "ce_qui_est_finance": null,
+  "montant_ou_plafond": null,
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": true,
+  "acteur_regional": "opco",
+  "specificites_regionales": {},
+  "id": "opco-financement",
+  "nom": "Financements des OPCO (opérateurs de compétences)",
+  "categorie": "opco",
+  "publics_concernes": [
+    "Entreprises et leurs salariés, selon la branche professionnelle"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "salarie_cdi",
+        "salarie_cdd"
+      ]
+    }
+  ],
+  "resume": "Les OPCO appuient le financement du plan de développement des compétences des entreprises. Ils gèrent des fonds dédiés aux entreprises de moins de 50 salariés, des contributions conventionnelles, des financements de l’État et des versements volontaires des entreprises. Ils reçoivent aussi les contrats d’alternance pour instruire leur prise en charge. Les OPCO prioritaires pour ce conseiller : Mobilités, EP (Entreprises de Proximité) et AKTO.",
+  "demarche": [
+    "Identifier l’OPCO de l’entreprise (selon la branche).",
+    "L’employeur dépose la demande de prise en charge auprès de son OPCO."
+  ],
+  "sources": [
+    {
+      "url": "https://www.francecompetences.fr/fiche-ruf/le-soutien-au-plan-de-developpement-des-competences-des-entreprises/",
+      "intitule": "Le soutien au plan de développement des compétences des entreprises",
+      "organisme": "France compétences",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

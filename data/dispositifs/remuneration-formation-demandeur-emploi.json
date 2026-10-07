@@ -1,0 +1,54 @@
+{
+  "sigle": null,
+  "criteres_a_verifier": [
+    "Les règles dépendent de l’indemnisation et du financeur de la formation : validation obligatoire par le conseiller avant l’entrée en formation",
+    "Formation de moins de 40 heures : maintien de l’allocation en cours, pas de rémunération spécifique"
+  ],
+  "ce_qui_est_finance": null,
+  "montant_ou_plafond": null,
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "remuneration-formation-demandeur-emploi",
+  "nom": "Rémunération pendant la formation d’un demandeur d’emploi (ARE-F, RFF, RFFT, RSFP)",
+  "categorie": "france_travail",
+  "publics_concernes": [
+    "Demandeurs d’emploi inscrits à France Travail, indemnisés ou non"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "de_indemnise",
+        "de_non_indemnise"
+      ]
+    }
+  ],
+  "resume": "Un demandeur d’emploi en formation peut être rémunéré selon sa situation. Indemnisé, il peut percevoir l’ARE-F (nouveau nom de l’AREF) pour une formation de plus de 40 heures, ou la RFF (rémunération de fin de formation) lorsque ses droits s’arrêtent. Non indemnisé, il peut bénéficier de la RFFT si France Travail cofinance la formation, ou de la RSFP versée par la Région pour certaines formations régionales.",
+  "demarche": [
+    "Consulter son conseiller France Travail avant de s’inscrire pour confirmer l’éligibilité.",
+    "Estimer ses ressources avec « Mes Ressources Formation »."
+  ],
+  "sources": [
+    {
+      "url": "https://www.francetravail.fr/candidat/en-formation/les-dispositifs/la-remuneration-pendant-la-forma.html",
+      "intitule": "Peut-on percevoir une rémunération pendant une formation ?",
+      "organisme": "France Travail",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

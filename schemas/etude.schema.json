@@ -1,0 +1,67 @@
+{
+  "$id": "etude.json",
+  "type": "object",
+  "required": ["id","date","region","region_nom","complet","profil","parcours","resultats"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]{6,60}$" },
+    "date": { "type": "string" },
+    "reference_dossier": { "type": "string", "maxLength": 60 },
+    "region": { "$ref": "commun.json#/definitions/codeRegion" },
+    "region_nom": { "type": "string" },
+    "region_travail": { "anyOf": [ { "$ref": "commun.json#/definitions/codeRegion" }, { "type": "null" } ] },
+    "region_travail_nom": { "type": ["string","null"] },
+    "departement": { "type": ["string","null"] },
+    "departement_nom": { "type": ["string","null"] },
+    "complet": { "type": "boolean" },
+    "profil": { "type": "object", "additionalProperties": { "type": "string" } },
+    "parcours": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["question","label"],
+        "additionalProperties": false,
+        "properties": { "question": { "type": "string" }, "label": { "type": "string" }, "attribut": { "type": "string" }, "valeur": { "type": "string" } }
+      }
+    },
+    "resultats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["dispositif_id","nom","categorie","eligibilite","bloc","resume","sources","date_derniere_verification"],
+        "additionalProperties": false,
+        "properties": {
+          "dispositif_id": { "type": "string" },
+          "nom": { "type": "string" },
+          "sigle": { "type": ["string","null"] },
+          "categorie": { "type": "string" },
+          "eligibilite": { "enum": ["probable","a_verifier"] },
+          "bloc": { "enum": ["national","regional","a_verifier_localement"] },
+          "resume": { "type": "string" },
+          "ce_qui_est_finance": { "type": ["string","null"] },
+          "montant_ou_plafond": { "type": ["string","null"] },
+          "manquants": { "type": "array", "items": { "type": "string" } },
+          "a_confirmer": { "type": "array", "items": { "type": "string" } },
+          "fiche_a_verifier": { "type": "boolean" },
+          "message_regional": { "type": ["string","null"] },
+          "contact_regional": { "type": ["object","null"], "properties": { "organisme": { "type": "string" }, "url": { "type": ["string","null"] } } },
+          "specificite_regionale": { "type": ["string","null"] },
+          "verification_perimee": { "type": "boolean" },
+          "date_derniere_verification": { "type": "string", "format": "date" },
+          "sources": { "type": "array", "items": { "$ref": "commun.json#/definitions/source" } }
+        }
+      }
+    },
+    "contacts_regionaux": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["acteur","organisme","url"],
+        "additionalProperties": false,
+        "properties": { "acteur": { "type": "string" }, "organisme": { "type": "string" }, "url": { "type": "string" }, "date_verification": { "type": "string" } }
+      }
+    },
+    "site_conseil_regional": { "type": ["string","null"] },
+    "notes": { "type": "string", "maxLength": 2000 }
+  }
+}

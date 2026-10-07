@@ -1,0 +1,68 @@
+{
+  "sigle": null,
+  "criteres_a_verifier": [
+    "Participation financière de 150 € : la page d’évolution du 2 octobre 2026 indique qu’elle s’applique au bilan même pour les demandeurs d’emploi, à confirmer"
+  ],
+  "ce_qui_est_finance": "Les heures d’accompagnement par le prestataire ; le travail personnel n’est pas financé.",
+  "montant_ou_plafond": "Plafond CPF de 1 600 €, sous réserve de ne pas avoir bénéficié d’un bilan financé (public ou privé) au cours des 5 dernières années. Participation financière de 150 €, non due en cas de complément employeur ou OPCO.",
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": false,
+  "acteur_regional": null,
+  "specificites_regionales": {},
+  "id": "bilan-competences",
+  "nom": "Bilan de compétences",
+  "categorie": "accompagnement",
+  "publics_concernes": [
+    "Salariés du privé",
+    "Agents publics et contractuels",
+    "Demandeurs d’emploi"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "projet",
+      "operateur": "in",
+      "valeurs": [
+        "bilan_competences",
+        "reconversion"
+      ]
+    }
+  ],
+  "resume": "Le bilan de compétences aide à analyser ses compétences, aptitudes et motivations pour définir un projet professionnel. Il comprend une phase préliminaire, une phase d’investigation et une phase de conclusion, pour 24 heures maximum. Il requiert toujours le consentement du salarié. Il se finance principalement avec le CPF ou, à l’initiative de l’employeur, dans le cadre du plan de développement des compétences.",
+  "demarche": [
+    "Choisir un prestataire (qualifications des conseillers, tests psychométriques, formation à distance si besoin).",
+    "Hors temps de travail : aucune information de l’employeur requise ; sur le temps de travail : accord écrit de l’employeur (réponse sous 30 jours).",
+    "Réaliser les trois phases du bilan (24 heures maximum)."
+  ],
+  "sources": [
+    {
+      "url": "https://www.moncompteformation.gouv.fr/espace-public/tout-savoir-sur-le-bilan-de-competences",
+      "intitule": "Bilan de compétences",
+      "organisme": "Mon Compte Formation (Caisse des Dépôts / État)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3087",
+      "intitule": "Bilan de compétences d’un salarié du secteur privé",
+      "organisme": "Service-Public.gouv.fr (DILA)",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.moncompteformation.gouv.fr/espace-public/de-nouvelles-regles-pour-mobiliser-votre-cpf",
+      "intitule": "Plafonnement des droits CPF pour certaines formations et situations",
+      "organisme": "Mon Compte Formation (Caisse des Dépôts / État)",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

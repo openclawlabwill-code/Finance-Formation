@@ -1,0 +1,69 @@
+{
+  "sigle": null,
+  "criteres_a_verifier": [
+    "Condition d’ancienneté : au moins 5 années en continu (1 300 jours) chez un ou plusieurs employeurs ; congés sans solde et sabbatiques exclus du décompte"
+  ],
+  "ce_qui_est_finance": null,
+  "montant_ou_plafond": null,
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": true,
+  "acteur_regional": "transitions_pro",
+  "specificites_regionales": {},
+  "id": "demission-reconversion",
+  "nom": "Démission-reconversion",
+  "categorie": "transitions_pro",
+  "publics_concernes": [
+    "Salariés en CDI qui démissionnent pour un projet de reconversion ou de création/reprise d’entreprise"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "salarie_cdi"
+      ]
+    },
+    {
+      "attribut": "anciennete",
+      "operateur": "in",
+      "valeurs": [
+        "plus_24_mois"
+      ]
+    },
+    {
+      "attribut": "projet",
+      "operateur": "in",
+      "valeurs": [
+        "reconversion",
+        "creation_reprise",
+        "certification_diplome"
+      ]
+    }
+  ],
+  "resume": "Ce dispositif permet à un salarié en CDI de démissionner pour un projet de reconversion (formation) ou de création/reprise d’entreprise tout en pouvant prétendre aux allocations chômage. Le projet est d’abord validé par Transitions Pro, qui délivre une attestation ; France Travail évalue ensuite le projet et calcule les allocations. Une fois l’accord obtenu, le salarié dispose de 6 mois pour démissionner et s’inscrire.",
+  "demarche": [
+    "Consulter un conseiller en évolution professionnelle (mon-cep.org) avant de démissionner.",
+    "Déposer un dossier auprès de Transitions Pro démontrant le caractère réel et sérieux du projet.",
+    "Après accord, démissionner, s’inscrire à France Travail et demander l’allocation dans les 6 mois."
+  ],
+  "sources": [
+    {
+      "url": "https://www.transitionspro.fr/nos-dispositifs/demission-reconversion/",
+      "intitule": "Dispositif Démission-reconversion",
+      "organisme": "Transitions Pro",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}

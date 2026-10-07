@@ -1,0 +1,60 @@
+{
+  "sigle": "POE",
+  "criteres_a_verifier": [
+    "POEC (collective) : modalités non détaillées sur les pages consultées, à vérifier avec France Travail ou l’OPCO"
+  ],
+  "ce_qui_est_finance": "Coût de la formation avant embauche, versé à l’employeur.",
+  "montant_ou_plafond": "Tutorat en entreprise : jusqu’à 5 € nets par heure, 300 heures maximum. Organisme de formation certifié Qualiopi : 450 heures (600 pour certains publics), aide examinée au cas par cas.",
+  "statut": "actif",
+  "portee_geographique": "national",
+  "regions_concernees": [],
+  "declinaison_regionale": true,
+  "acteur_regional": "france_travail",
+  "specificites_regionales": {},
+  "id": "poe",
+  "nom": "Préparation opérationnelle à l’emploi (POEI et POEC)",
+  "categorie": "france_travail",
+  "publics_concernes": [
+    "Demandeurs d’emploi inscrits à France Travail, indemnisés ou non, avant une embauche"
+  ],
+  "criteres_eligibilite": [
+    {
+      "attribut": "statut",
+      "operateur": "in",
+      "valeurs": [
+        "de_indemnise",
+        "de_non_indemnise"
+      ]
+    }
+  ],
+  "resume": "La préparation opérationnelle à l’emploi finance une formation avant l’embauche, pour combler l’écart entre les compétences d’un candidat et celles qu’exige un poste. Côté employeur (POEI), l’aide est sollicitée à partir d’une offre déposée à France Travail et d’un plan de formation établi avec les parties. La formation peut atteindre 450 heures, jusqu’à 600 heures pour certains publics prioritaires, et doit déboucher sur un contrat d’au moins 4 à 6 mois selon le type.",
+  "demarche": [
+    "L’employeur dépose une offre d’emploi à France Travail.",
+    "Définition du plan de formation avec le conseiller.",
+    "Validation du candidat via son espace personnel, puis de la demande d’aide."
+  ],
+  "sources": [
+    {
+      "url": "https://www.francetravail.fr/candidat/en-formation/mes-aides-financieres/la-preparation-operationnelle-a.html",
+      "intitule": "La Préparation Opérationnelle à l’Emploi (POE)",
+      "organisme": "France Travail",
+      "date_consultation": "2026-10-07"
+    },
+    {
+      "url": "https://www.francetravail.fr/employeur/aides-aux-recrutements/les-aides-a-la-formation/la-preparation-operationnelle-a.html",
+      "intitule": "La Préparation Opérationnelle à l’Emploi individuelle (POE I)",
+      "organisme": "France Travail",
+      "date_consultation": "2026-10-07"
+    }
+  ],
+  "date_derniere_verification": "2026-10-07",
+  "date_derniere_modification": "2026-10-07",
+  "historique": [
+    {
+      "date": "2026-10-07",
+      "action": "creation",
+      "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
+      "auteur": "Claude (étape c)"
+    }
+  ]
+}
