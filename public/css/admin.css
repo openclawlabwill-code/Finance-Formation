@@ -1,0 +1,18 @@
+.onglets { display: flex; gap: 4px; padding: 8px 24px 0; background: var(--bleu-clair); }
+.onglets button { border: 1px solid var(--bordure); border-bottom: 0; border-radius: 8px 8px 0 0; background: var(--surface); padding: 8px 16px; cursor: pointer; color: var(--bleu-marine); }
+.onglets button[aria-selected="true"] { background: var(--bleu-marine); color: #fff; }
+.lien-bouton { color: #fff; border: 1px solid #fff; border-radius: 8px; padding: 6px 12px; text-decoration: none; }
+.diff { width: 100%; border-collapse: collapse; background: var(--surface); table-layout: fixed; }
+.diff th, .diff td { border: 1px solid var(--bordure); padding: 6px 8px; vertical-align: top; font-size: .85rem; word-break: break-word; }
+.diff td.avant { background: #fdecea; } .diff td.apres { background: #e3f4ea; }
+.diff pre { margin: 0; white-space: pre-wrap; font-family: inherit; }
+.grille-synthese { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 12px 0; }
+.chiffre { background: var(--surface); border: 1px solid var(--bordure); border-radius: var(--rayon); padding: 12px; }
+.chiffre b { display: block; font-size: 1.6rem; color: var(--bleu-marine); }
+.statut-prop { font-size: .8rem; border-radius: 10px; padding: 1px 8px; background: var(--bleu-clair); }
+.statut-prop.en_attente { background: #fff4d6; color: var(--accent-sombre); }
+.statut-prop.refusee { background: #fdecea; color: var(--alerte); }
+.statut-prop.acceptee, .statut-prop.acceptee_auto { background: #e3f4ea; color: var(--ok); }
+.oui { color: var(--ok); font-weight: 600; } .non { color: var(--alerte); font-weight: 600; }
+.ligne-actions { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+.ligne-actions input { flex: 1; min-width: 200px; width: auto; }

@@ -23,12 +23,12 @@ export function fiche(surcharge = {}) {
   };
 }
 
-export async function demarrer({ apiToken = '' } = {}) {
+export async function demarrer({ apiToken = '', autoPublish = false } = {}) {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'ff-'));
   fs.cpSync(path.join(RACINE, 'data'), path.join(tmp, 'data'), { recursive: true });
   fs.cpSync(path.join(RACINE, 'config'), path.join(tmp, 'config'), { recursive: true });
   for (const f of fs.readdirSync(path.join(tmp, 'data/dispositifs'))) if (f.endsWith('.json')) fs.rmSync(path.join(tmp, 'data/dispositifs', f));
-  const config = chargerConfig({ dataDir: path.join(tmp, 'data'), configDir: path.join(tmp, 'config'), apiToken });
+  const config = chargerConfig({ dataDir: path.join(tmp, 'data'), configDir: path.join(tmp, 'config'), apiToken, autoPublish });
   const app = creerApp(config);
   await new Promise((ok) => app.serveur.listen(0, '127.0.0.1', ok));
   const base = `http://127.0.0.1:${app.serveur.address().port}`;

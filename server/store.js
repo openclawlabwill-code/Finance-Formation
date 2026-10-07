@@ -92,6 +92,12 @@ export function creerStore({ dataDir, configDir, validateur }) {
       return { actualite: actu, archivees: anciennes.length };
     },
 
+    async lireJournal(limite = 100) {
+      let txt = '';
+      try { txt = await fs.readFile(p('journal-maj.log'), 'utf8'); } catch { return []; }
+      return txt.split('\n').filter(Boolean).slice(-limite).reverse().map((l) => { try { return JSON.parse(l); } catch { return { brut: l }; } });
+    },
+
     async listerBackups() {
       try { return (await fs.readdir(p('backups'))).filter((n) => n.includes('__')).sort().reverse(); } catch { return []; }
     },

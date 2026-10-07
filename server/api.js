@@ -1,11 +1,14 @@
 // Routes de l'API REST. Lecture ouverte (serveur lié à 127.0.0.1) ; écriture protégée par token (étape f).
-import { ErreurHttp } from './http.js';
+import { ErreurHttp, exigerToken } from './http.js';
+import { creerServiceMaj } from './maj.js';
 import { dispositifsPourRegion, decorerPourRegion } from './regional.js';
 import { evaluerProfil, verifierProfil } from './eligibilite.js';
+import { couvertureRegion } from './couverture.js';
 import { creerServiceEtudes, versMarkdown } from './etudes.js';
 
 export function enregistrerRoutesApi(r, { store, config }) {
   const etudes = creerServiceEtudes({ store });
+  const maj = creerServiceMaj({ store, config });
   const ctx = async () => ({ sources: await store.sources(), regions: await store.regions() });
 
   async function regionValide(code) {
@@ -92,4 +95,28 @@ export function enregistrerRoutesApi(r, { store, config }) {
     envoyerMarkdown(res, versMarkdown(e), `synthese-${e.id}.md`);
   });
   r.delete('/api/etudes/:id', async (req) => etudes.supprimer(req.params.id));
+
+  // ---------- API de mise à jour (agent externe, token obligatoire) ----------
+  const token = exigerToken(config);
+  r.post('/api/maj/proposition', token, async (req) => maj.deposer(req.body));
+  r.get('/api/maj/propositions', token, async (req) => ({ propositions: await maj.lister(req.query.statut) }));
+  r.get('/api/maj/propositions/:id', token, async (req) => maj.lire(req.params.id));
+
+  // ---------- Administration locale (navigateur de la machine) ----------
+  // Les décisions humaines (accepter, refuser, restaurer) exigent un en-tête Origin identique à l'hôte : un navigateur sur
+  // cette machine (page /admin), pas un simple script. Voir README, limites connues.
+  const depuisNavigateur = async (req) => {
+    if (!req.headers.origin) throw new ErreurHttp(403, 'Décision réservée à la page /admin (navigateur local)');
+  };
+  r.get('/api/admin/propositions', async (req) => ({ propositions: await maj.lister(req.query.statut) }));
+  r.get('/api/admin/propositions/:id', async (req) => maj.lire(req.params.id));
+  r.post('/api/admin/propositions/:id/accepter', depuisNavigateur, async (req) => maj.accepter(req.params.id));
+  r.post('/api/admin/propositions/:id/refuser', depuisNavigateur, async (req) => maj.refuser(req.params.id, req.body?.motif));
+  r.get('/api/admin/journal', async (req) => ({ entrees: await store.lireJournal(Math.min(Number(req.query.limite) || 100, 500)) }));
+  r.get('/api/admin/backups', async () => ({ backups: await store.listerBackups() }));
+  r.post('/api/admin/restaurer', depuisNavigateur, async (req) => store.restaurerBackup(String(req.body?.backup || '')));
+  r.get('/api/admin/couverture', async (req) => {
+    const region = await regionValide(req.query.region || config.regionParDefaut);
+    return couvertureRegion({ region, regions: await store.regions(), sources: await store.sources(), dispositifs: await store.listerDispositifs() });
+  });
 }

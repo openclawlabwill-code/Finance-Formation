@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FinanceForma — administration</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <header class="bandeau-titre">
+    <h1>FinanceForma — administration</h1>
+    <div class="barre-actions">
+      <a class="lien-bouton" href="/">← Retour à l’application</a>
+    </div>
+  </header>
+  <nav class="onglets" role="tablist" aria-label="Sections">
+    <button type="button" role="tab" data-onglet="propositions" aria-selected="true">Propositions</button>
+    <button type="button" role="tab" data-onglet="couverture" aria-selected="false">Couverture régionale</button>
+    <button type="button" role="tab" data-onglet="journal" aria-selected="false">Journal et sauvegardes</button>
+  </nav>
+  <main id="admin" class="ecran-doc"></main>
+  <script type="module" src="/js/admin.js"></script>
+</body>
+</html>
