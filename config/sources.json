@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "_note": "Sources officielles uniquement. Chaque URL est ajoutée par vérification (date_verification) ; aucune URL écrite de mémoire. L'agent Hermes lit ce fichier pour savoir où chercher. Domaines institutionnels ajoutés après constat sur les pages : mon-cep.org (réseau CEP, cité par France compétences et Transitions Pro), artisanat.fr (portail officiel du réseau des CMA), fifpl.fr (FIF PL), communication-agefice.fr (AGEFICE).",
+  "_note": "Sources officielles uniquement. Chaque URL est ajoutée par vérification (date_verification) ; aucune URL écrite de mémoire. L'agent Hermes lit ce fichier pour savoir où chercher. Domaines institutionnels ajoutés après constat sur les pages : mon-cep.org (réseau CEP, cité par France compétences et Transitions Pro), artisanat.fr (portail officiel du réseau des CMA), fifpl.fr (FIF PL), communication-agefice.fr (AGEFICE). Domaines ajoutés le 07/10/2026 pour les Pays de la Loire après constat sur les pages : paysdelaloire.fr (site du Conseil régional), choisirmonmetier-paysdelaloire.fr (Cariforef, pied de page « site du Cariforef des Pays de la Loire »), artisanatpaysdelaloire.fr (CMA Pays de la Loire), francetravail.org (site institutionnel de France Travail), opcoep.fr et akto.fr (OPCO), transitionspro-pdl.fr (Transitions Pro Pays de la Loire : lien depuis le site national transitionspro.fr non confirmé, contrôle bloqué par robots.txt, à vérifier à la main).",
   "domaines_autorises": [
     "gouv.fr",
     "service-public.fr",
@@ -12,7 +12,14 @@
     "mon-cep.org",
     "artisanat.fr",
     "fifpl.fr",
-    "communication-agefice.fr"
+    "communication-agefice.fr",
+    "paysdelaloire.fr",
+    "francetravail.org",
+    "transitionspro-pdl.fr",
+    "artisanatpaysdelaloire.fr",
+    "choisirmonmetier-paysdelaloire.fr",
+    "opcoep.fr",
+    "akto.fr"
   ],
   "nationales": [],
   "regions": {
@@ -115,16 +122,128 @@
     "52": {
       "nom": "Pays de la Loire",
       "acteurs": {
-        "conseil_regional": [],
-        "transitions_pro": [],
-        "agefiph": [],
+        "conseil_regional": [
+          {
+            "url": "https://www.paysdelaloire.fr/formation-et-emploi/formation-professionnelle/financer-son-parcours-de-formation-professionnelle",
+            "organisme": "Région Pays de la Loire (Conseil régional)",
+            "type": "page_web",
+            "frequence": "mensuelle",
+            "dispositifs": [
+              "programme-regional-formation",
+              "remuneration-formation-demandeur-emploi"
+            ],
+            "date_verification": "2026-10-07"
+          }
+        ],
+        "transitions_pro": [
+          {
+            "url": "https://www.transitionspro-pdl.fr/",
+            "organisme": "Transitions Pro Pays de la Loire",
+            "type": "page_web",
+            "frequence": "mensuelle",
+            "dispositifs": [
+              "ptp",
+              "demission-reconversion"
+            ],
+            "date_verification": "2026-10-07"
+          }
+        ],
+        "agefiph": [
+          {
+            "url": "https://www.agefiph.fr/pays-de-la-loire",
+            "organisme": "Agefiph Pays de la Loire",
+            "type": "page_web",
+            "frequence": "mensuelle",
+            "dispositifs": [
+              "agefiph-aides-formation"
+            ],
+            "date_verification": "2026-10-07"
+          }
+        ],
         "cap_emploi": [],
-        "cma": [],
-        "cariforef": [],
-        "france_travail": [],
-        "missions_locales": [],
-        "dreets": [],
-        "opco": [],
+        "cma": [
+          {
+            "url": "https://www.artisanatpaysdelaloire.fr/",
+            "organisme": "CMA Pays de la Loire",
+            "type": "page_web",
+            "frequence": "mensuelle",
+            "dispositifs": [
+              "conseil-formation-artisans",
+              "fafcea"
+            ],
+            "date_verification": "2026-10-07"
+          }
+        ],
+        "cariforef": [
+          {
+            "url": "https://pro.choisirmonmetier-paysdelaloire.fr/",
+            "organisme": "Cariforef Pays de la Loire (Carif-Oref)",
+            "type": "page_web",
+            "frequence": "mensuelle",
+            "dispositifs": [
+              "programme-regional-formation"
+            ],
+            "date_verification": "2026-10-07"
+          }
+        ],
+        "france_travail": [
+          {
+            "url": "https://monemploi-paysdelaloire.francetravail.fr/je-me-forme",
+            "organisme": "France Travail Pays de la Loire",
+            "type": "page_web",
+            "frequence": "mensuelle",
+            "dispositifs": [
+              "poe",
+              "aif",
+              "afpr"
+            ],
+            "date_verification": "2026-10-07"
+          }
+        ],
+        "missions_locales": [
+          {
+            "url": "https://www.1jeune1solution.gouv.fr/mission-locale",
+            "organisme": "Missions locales (présentation 1jeune1solution, ministère du Travail)",
+            "type": "page_web",
+            "frequence": "mensuelle",
+            "dispositifs": [
+              "contrat-engagement-jeune"
+            ],
+            "date_verification": "2026-10-07"
+          }
+        ],
+        "dreets": [
+          {
+            "url": "https://pays-de-la-loire.dreets.gouv.fr",
+            "organisme": "DREETS Pays de la Loire",
+            "type": "page_web",
+            "frequence": "mensuelle",
+            "dispositifs": [],
+            "date_verification": "2026-10-07"
+          }
+        ],
+        "opco": [
+          {
+            "url": "https://opcoep.fr/ressources/centre-ressources/region/pl/opcoep-dans-les-pays-de-la-loire.pdf",
+            "organisme": "OPCO EP — délégation Pays de la Loire",
+            "type": "page_web",
+            "frequence": "mensuelle",
+            "dispositifs": [
+              "opco-financement"
+            ],
+            "date_verification": "2026-10-07"
+          },
+          {
+            "url": "https://www.akto.fr/nous-contacter/",
+            "organisme": "AKTO (contact national : pas de page régionale trouvée)",
+            "type": "page_web",
+            "frequence": "mensuelle",
+            "dispositifs": [
+              "opco-financement"
+            ],
+            "date_verification": "2026-10-07"
+          }
+        ],
         "conseil_departemental": []
       }
     },

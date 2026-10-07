@@ -5,12 +5,31 @@
   ],
   "ce_qui_est_finance": "Coût de la formation avant embauche, versé à l’employeur.",
   "montant_ou_plafond": "Tutorat en entreprise : jusqu’à 5 € nets par heure, 300 heures maximum. Organisme de formation certifié Qualiopi : 450 heures (600 pour certains publics), aide examinée au cas par cas.",
-  "statut": "actif",
+  "statut": "modifie",
   "portee_geographique": "national",
   "regions_concernees": [],
   "declinaison_regionale": true,
   "acteur_regional": "france_travail",
-  "specificites_regionales": {},
+  "specificites_regionales": {
+    "52": {
+      "statut": "a_verifier",
+      "sources": [
+        {
+          "url": "https://monemploi-paysdelaloire.francetravail.fr/je-me-forme",
+          "intitule": "Je me forme — Mon emploi en Pays de la Loire",
+          "organisme": "France Travail Pays de la Loire",
+          "date_consultation": "2026-10-07"
+        }
+      ],
+      "resume": "Le site régional de France Travail Pays de la Loire présente la POE individuelle (POEI) et le dispositif « 1 emploi 1 formation » (formations construites avec des employeurs qui s’engagent à recruter à l’issue). Les conditions d’éligibilité propres à la région ne figurent pas sur la page consultée.",
+      "montants_conditions": null,
+      "contact": {
+        "organisme": "France Travail Pays de la Loire",
+        "url": "https://monemploi-paysdelaloire.francetravail.fr/je-me-forme/poei"
+      },
+      "date_derniere_verification": "2026-10-07"
+    }
+  },
   "id": "poe",
   "nom": "Préparation opérationnelle à l’emploi (POEI et POEC)",
   "categorie": "france_travail",
@@ -55,6 +74,13 @@
       "action": "creation",
       "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
       "auteur": "Claude (étape c)"
+    },
+    {
+      "date": "2026-10-07",
+      "action": "modification",
+      "resume": "Présentation régionale de la POE individuelle par France Travail Pays de la Loire",
+      "auteur": "claude-etape-g",
+      "region": "52"
     }
   ]
 }

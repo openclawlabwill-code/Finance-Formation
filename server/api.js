@@ -3,6 +3,7 @@ import { ErreurHttp, exigerToken } from './http.js';
 import { creerServiceMaj } from './maj.js';
 import { dispositifsPourRegion, decorerPourRegion } from './regional.js';
 import { evaluerProfil, verifierProfil } from './eligibilite.js';
+import { genererPack, importerPack } from './pack.js';
 import { couvertureRegion } from './couverture.js';
 import { creerServiceEtudes, versMarkdown } from './etudes.js';
 
@@ -115,6 +116,14 @@ export function enregistrerRoutesApi(r, { store, config }) {
   r.get('/api/admin/journal', async (req) => ({ entrees: await store.lireJournal(Math.min(Number(req.query.limite) || 100, 500)) }));
   r.get('/api/admin/backups', async () => ({ backups: await store.listerBackups() }));
   r.post('/api/admin/restaurer', depuisNavigateur, async (req) => store.restaurerBackup(String(req.body?.backup || '')));
+  // Pack autoporteur pour un assistant IA (Copilot…) : export puis import de la réponse. Limité à la région par défaut (Pays de la Loire).
+  r.get('/api/admin/pack', async (req, res) => {
+    const pack = await genererPack({ store, region: config.regionParDefaut });
+    const corps = JSON.stringify(pack, null, 2);
+    res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8', 'Content-Disposition': `attachment; filename="financeforma-pack-${pack.region}-${pack.genere_le}.json"`, 'Cache-Control': 'no-store' });
+    res.end(corps);
+  });
+  r.post('/api/admin/pack/importer', depuisNavigateur, async (req) => importerPack({ maj, texte: req.body?.texte, region: config.regionParDefaut }));
   r.get('/api/admin/couverture', async (req) => {
     const region = await regionValide(req.query.region || config.regionParDefaut);
     return couvertureRegion({ region, regions: await store.regions(), sources: await store.sources(), dispositifs: await store.listerDispositifs() });

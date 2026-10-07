@@ -60,7 +60,10 @@
       "code": "52",
       "nom": "Pays de la Loire",
       "type": "metropole",
-      "site_conseil_regional": null,
+      "site_conseil_regional": {
+        "url": "https://www.paysdelaloire.fr/",
+        "date_verification": "2026-10-07"
+      },
       "statut_documentation": "en_cours",
       "active": true,
       "departements": [

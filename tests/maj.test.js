@@ -124,3 +124,34 @@ test('admin : matrice de couverture régionale', async () => {
   assert.equal((await t.appel('/api/admin/couverture?region=99')).statut, 400);
   await t.arreter();
 });
+
+test('pack LLM : export autoporteur, import tolérant, mêmes règles que l’API', async () => {
+  const t = await pret();
+  const r = await fetch(`${t.base}/api/admin/pack`);
+  assert.equal(r.status, 200); assert.match(r.headers.get('content-disposition'), /financeforma-pack-52-/);
+  const pack = await r.json();
+  assert.equal(pack.format, 'financeforma-pack/1'); assert.equal(pack.region, '52');
+  assert.ok(pack._lisez_moi.length >= 3 && pack.regles.length >= 5 && pack.format_reponse.propositions.length === 1);
+  assert.ok(pack.fiches.some((f) => f.id === 'fiche-test') && Array.isArray(pack.a_traiter) && pack.acteurs_regionaux);
+  assert.deepEqual(pack.propositions, []);
+
+  const bonne = prop({ agent: undefined });
+  const mauvaise = prop({ contenu: { resume: 'Réécriture nationale interdite depuis une source régionale.' } });
+  const horsListe = prop({ sources: [{ ...SRC[0], url: 'https://blog.example.com/x' }] });
+  // réponse d'assistant : prose + bloc ```json
+  const reponse = `Voici mon travail.\n\`\`\`json\n${JSON.stringify({ ...pack, propositions: [bonne, mauvaise, horsListe], compte_rendu: 'Une page inaccessible.' })}\n\`\`\`\nBonne journée.`;
+  const imp = await t.appel('/api/admin/pack/importer', { method: 'POST', body: JSON.stringify({ texte: reponse }), headers: navigateur(t) });
+  assert.equal(imp.statut, 200, JSON.stringify(imp.json));
+  assert.equal(imp.json.deposees.length, 1); assert.equal(imp.json.rejetees.length, 2);
+  assert.equal(imp.json.compte_rendu, 'Une page inaccessible.');
+  assert.equal((await t.store.lireDispositif('fiche-test')).specificites_regionales['52'], undefined, 'rien d’appliqué sans validation');
+  assert.equal((await t.appel('/api/admin/propositions?statut=en_attente')).json.propositions[0].agent, 'pack-llm');
+  // garde-fous
+  const sansOrigine = await t.appel('/api/admin/pack/importer', { method: 'POST', body: JSON.stringify({ texte: reponse }) });
+  assert.equal(sansOrigine.statut, 403);
+  const post = (texte) => t.appel('/api/admin/pack/importer', { method: 'POST', body: JSON.stringify({ texte }), headers: navigateur(t) });
+  assert.equal((await post('pas du json')).statut, 422);
+  assert.equal((await post(JSON.stringify({ format: 'autre', propositions: [] }))).statut, 422);
+  assert.equal((await post(JSON.stringify({ format: 'financeforma-pack/1', region: '11', propositions: [] }))).statut, 422);
+  await t.arreter();
+});

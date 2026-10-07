@@ -3,12 +3,32 @@
   "criteres_a_verifier": [],
   "ce_qui_est_finance": "Formations collectives gratuites achetées par la Région.",
   "montant_ou_plafond": null,
-  "statut": "actif",
+  "statut": "modifie",
   "portee_geographique": "national",
   "regions_concernees": [],
   "declinaison_regionale": true,
   "acteur_regional": "conseil_regional",
-  "specificites_regionales": {},
+  "specificites_regionales": {
+    "52": {
+      "statut": "actif",
+      "sources": [
+        {
+          "url": "https://pro.choisirmonmetier-paysdelaloire.fr/presentation-du-prf/",
+          "intitule": "Présentation du PRF",
+          "organisme": "Cariforef Pays de la Loire",
+          "date_consultation": "2026-10-07"
+        }
+      ],
+      "resume": "Programme régional de formation 2026 de la Région Pays de la Loire (politique « 1 emploi = 1 formation »), accessible dès 16 ans après la sortie de la formation initiale, en lien avec le Conseil en évolution professionnelle (France Travail, Cap emploi ou missions locales). Catégories publiées : Formations Prépa ; 1 emploi = 1 formation ; formations sanitaires et sociales ; soutenir l’apprentissage ; Pass Entreprendre ; développement des compétences des salariés ; formations publics spécifiques.",
+      "montants_conditions": "Montants, rémunération et modalités d’inscription non précisés sur la page consultée : voir le catalogue PRF du Cariforef ou contacter un conseiller.",
+      "contact": {
+        "organisme": "Cariforef Pays de la Loire",
+        "url": "https://pro.choisirmonmetier-paysdelaloire.fr/",
+        "telephone": "0 800 200 303"
+      },
+      "date_derniere_verification": "2026-10-07"
+    }
+  },
   "id": "programme-regional-formation",
   "nom": "Programme régional de formation (formations financées par la Région)",
   "categorie": "financement_region",
@@ -48,6 +68,13 @@
       "action": "creation",
       "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
       "auteur": "Claude (étape c)"
+    },
+    {
+      "date": "2026-10-07",
+      "action": "modification",
+      "resume": "Contenu du PRF 2026 en Pays de la Loire (catégories publiées par le Cariforef)",
+      "auteur": "claude-etape-g",
+      "region": "52"
     }
   ]
 }

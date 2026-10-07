@@ -11,7 +11,26 @@
   "regions_concernees": [],
   "declinaison_regionale": true,
   "acteur_regional": "cma",
-  "specificites_regionales": {},
+  "specificites_regionales": {
+    "52": {
+      "statut": "a_verifier",
+      "sources": [
+        {
+          "url": "https://www.artisanatpaysdelaloire.fr/article/financer-sa-formation-1",
+          "intitule": "Financer sa formation",
+          "organisme": "CMA Pays de la Loire",
+          "date_consultation": "2026-10-07"
+        }
+      ],
+      "resume": "Les conseillers de la CMA Pays de la Loire gèrent les démarches de prise en charge pour l’offre de formation de la CMA ; le contact passe par le formulaire en ligne du site. Les chefs d’entreprise artisanale, conjoints collaborateurs, associés et auxiliaires familiaux relèvent du FAFCEA ; les gérants minoritaires ou égalitaires de SARL et les dirigeants rémunérés de SAS, SASU, SA ou SELAFA relèvent de leur OPCO.",
+      "montants_conditions": "Montants, taux de prise en charge et coordonnées téléphoniques régionales non précisés sur la page (datée du 05/06/2024).",
+      "contact": {
+        "organisme": "CMA Pays de la Loire",
+        "url": "https://www.artisanatpaysdelaloire.fr/"
+      },
+      "date_derniere_verification": "2026-10-07"
+    }
+  },
   "id": "conseil-formation-artisans",
   "nom": "Conseil de la formation (artisans) et accompagnement par les CMA",
   "categorie": "faf_independants",
@@ -47,6 +66,13 @@
       "action": "creation",
       "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
       "auteur": "Claude (étape c)"
+    },
+    {
+      "date": "2026-10-07",
+      "action": "modification",
+      "resume": "Prise en charge de la formation des artisans : CMA Pays de la Loire",
+      "auteur": "claude-etape-g",
+      "region": "52"
     }
   ]
 }

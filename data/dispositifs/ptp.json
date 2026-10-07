@@ -6,12 +6,31 @@
   ],
   "ce_qui_est_finance": "Frais pédagogiques d’une formation certifiante (répertoire RNCP ou spécifique, organisme certifié Qualiopi) et maintien de la rémunération pendant la formation.",
   "montant_ou_plafond": "Rémunération maintenue à 100 % du salaire de référence jusqu’à 2 SMIC et 90 % au-delà, selon les barèmes applicables (page Transitions Pro). Décision communiquée au plus tard 48 heures après la commission.",
-  "statut": "actif",
+  "statut": "modifie",
   "portee_geographique": "national",
   "regions_concernees": [],
   "declinaison_regionale": true,
   "acteur_regional": "transitions_pro",
-  "specificites_regionales": {},
+  "specificites_regionales": {
+    "52": {
+      "statut": "a_verifier",
+      "sources": [
+        {
+          "url": "https://www.transitionspro-pdl.fr/nos-dispositifs-et-services/",
+          "intitule": "Nos dispositifs et services",
+          "organisme": "Transitions Pro Pays de la Loire",
+          "date_consultation": "2026-10-07"
+        }
+      ],
+      "resume": "Le PTP est instruit par Transitions Pro Pays de la Loire. Les pages consultées ne publient ni calendrier de dépôt, ni plafonds de prise en charge, ni priorités régionales. L’association applique une « ingénierie de parcours de formation et financière » (individualisation des durées, prise en compte des blocs de compétences et de la VAE, cohérence des coûts, formation à distance, cofinancements).",
+      "montants_conditions": null,
+      "contact": {
+        "organisme": "Transitions Pro Pays de la Loire",
+        "url": "https://www.transitionspro-pdl.fr/nous-contacter/"
+      },
+      "date_derniere_verification": "2026-10-07"
+    }
+  },
   "id": "ptp",
   "nom": "Projet de transition professionnelle",
   "categorie": "transitions_pro",
@@ -72,6 +91,13 @@
       "action": "creation",
       "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
       "auteur": "Claude (étape c)"
+    },
+    {
+      "date": "2026-10-07",
+      "action": "modification",
+      "resume": "Instruction du PTP par Transitions Pro Pays de la Loire : informations régionales non publiées",
+      "auteur": "claude-etape-g",
+      "region": "52"
     }
   ]
 }

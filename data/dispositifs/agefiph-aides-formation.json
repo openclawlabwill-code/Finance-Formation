@@ -6,12 +6,32 @@
   ],
   "ce_qui_est_finance": "Surcoûts liés à la compensation du handicap en formation (pas les obligations générales d’accessibilité).",
   "montant_ou_plafond": "Aide à l’embauche en contrat d’apprentissage ou de professionnalisation d’une personne en situation de handicap : jusqu’à 3 000 € (employeur). Aide à l’adaptation des situations de formation : montant selon étude.",
-  "statut": "actif",
+  "statut": "modifie",
   "portee_geographique": "national",
   "regions_concernees": [],
   "declinaison_regionale": true,
   "acteur_regional": "agefiph",
-  "specificites_regionales": {},
+  "specificites_regionales": {
+    "52": {
+      "statut": "actif",
+      "sources": [
+        {
+          "url": "https://www.agefiph.fr/pays-de-la-loire",
+          "intitule": "Agefiph Pays de la Loire",
+          "organisme": "Agefiph",
+          "date_consultation": "2026-10-07"
+        }
+      ],
+      "resume": "La délégation régionale de l’Agefiph Pays de la Loire (Nantes) est joignable au 0 800 11 10 09 (appel gratuit, du lundi au vendredi de 9h à 18h). Les demandes d’aide se font en ligne et un rendez-vous vidéo avec un conseiller emploi peut être pris.",
+      "montants_conditions": "Aucune aide spécifique à la région relevée sur la page consultée : se référer aux aides nationales de la fiche.",
+      "contact": {
+        "organisme": "Agefiph Pays de la Loire",
+        "url": "https://www.agefiph.fr/pays-de-la-loire",
+        "telephone": "0 800 11 10 09"
+      },
+      "date_derniere_verification": "2026-10-07"
+    }
+  },
   "id": "agefiph-aides-formation",
   "nom": "Aides de l’Agefiph pour la formation (personnes en situation de handicap)",
   "categorie": "agefiph_handicap",
@@ -66,6 +86,13 @@
       "action": "creation",
       "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
       "auteur": "Claude (étape c)"
+    },
+    {
+      "date": "2026-10-07",
+      "action": "modification",
+      "resume": "Contacts de la délégation régionale Agefiph Pays de la Loire",
+      "auteur": "claude-etape-g",
+      "region": "52"
     }
   ]
 }

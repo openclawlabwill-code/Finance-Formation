@@ -6,12 +6,31 @@
   ],
   "ce_qui_est_finance": null,
   "montant_ou_plafond": null,
-  "statut": "actif",
+  "statut": "modifie",
   "portee_geographique": "national",
   "regions_concernees": [],
   "declinaison_regionale": true,
   "acteur_regional": "opco",
-  "specificites_regionales": {},
+  "specificites_regionales": {
+    "52": {
+      "statut": "a_verifier",
+      "sources": [
+        {
+          "url": "https://opcoep.fr/ressources/centre-ressources/region/pl/opcoep-dans-les-pays-de-la-loire.pdf",
+          "intitule": "OPCO EP dans les Pays de la Loire",
+          "organisme": "OPCO EP",
+          "date_consultation": "2026-10-07"
+        }
+      ],
+      "resume": "OPCO EP (entreprises de proximité) : actions régionales en Pays de la Loire relevées dans son document régional (chiffres 2024) : aide à l’investissement des CFA (10 CFA aidés, 552 604 € investis), soutien au développement de l’apprentissage, accompagnement à la transition écologique des entreprises, plan d’action régional proposé chaque année par la commission paritaire régionale. Aucune adresse ni contact de délégation n’est donné. AKTO : pas de page régionale ni de délégation Pays de la Loire trouvée (contact national uniquement). OPCO Mobilités : page régionale non vérifiée (site inaccessible aux contrôles automatiques).",
+      "montants_conditions": "Conditions d’accès et montants non précisés : prise en charge selon les critères de la branche, à confirmer auprès de l’OPCO.",
+      "contact": {
+        "organisme": "OPCO de la branche de l’employeur (EP, AKTO, Mobilités)",
+        "url": "https://www.opcoep.fr/nous-contacter"
+      },
+      "date_derniere_verification": "2026-10-07"
+    }
+  },
   "id": "opco-financement",
   "nom": "Financements des OPCO (opérateurs de compétences)",
   "categorie": "opco",
@@ -49,6 +68,13 @@
       "action": "creation",
       "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
       "auteur": "Claude (étape c)"
+    },
+    {
+      "date": "2026-10-07",
+      "action": "modification",
+      "resume": "Actions régionales des OPCO prioritaires en Pays de la Loire (EP documenté, AKTO et Mobilités non trouvés)",
+      "auteur": "claude-etape-g",
+      "region": "52"
     }
   ]
 }

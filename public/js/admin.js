@@ -113,8 +113,41 @@ async function vueJournal(zone, message, erreur) {
   } catch (e) { add(zone, msg(e.message, true)); }
 }
 
+// ---------- Pack pour assistant IA ----------
+const CONSIGNE = 'Voici un fichier de données autoporteur. Lis les instructions qu’il contient (_lisez_moi, regles, format_reponse), vérifie les points de « a_traiter » sur les sites officiels indiqués, puis renvoie le fichier JSON avec le tableau « propositions » rempli. N’invente rien : pour chaque proposition, cite la page officielle réellement consultée avec un extrait. Si une page est inaccessible, dis-le dans « compte_rendu » au lieu de deviner.';
+async function vuePack(zone) {
+  vider(zone);
+  const sortie = el('div', { role: 'status' });
+  const texte = el('textarea', { id: 'texte-pack', rows: '8', placeholder: 'Collez ici la réponse de l’assistant (ou choisissez le fichier ci-dessus).' });
+  const fichier = el('input', { type: 'file', id: 'fichier-pack', accept: '.json,.txt,.md,application/json,text/plain',
+    onChange: async (e) => { const f = e.target.files[0]; if (f) texte.value = await f.text(); } });
+  const importer = async () => {
+    vider(sortie);
+    if (!texte.value.trim()) { add(sortie, msg('Aucun contenu à importer.', true)); return; }
+    try {
+      const r = await api('/api/admin/pack/importer', { method: 'POST', body: { texte: texte.value } });
+      add(sortie, msg(`${r.deposees.length} proposition(s) déposée(s), ${r.rejetees.length} rejetée(s) sur ${r.nb_propositions}.`, false));
+      if (r.deposees.length) add(sortie, el('p', {}, 'Les propositions sont dans l’onglet « Propositions » : relisez le tableau avant/après, puis acceptez ou refusez.'));
+      if (r.rejetees.length) add(sortie, el('h3', {}, 'Rejetées'), el('ul', {}, r.rejetees.map((x) => el('li', {}, `#${x.rang} ${x.action || ''} ${x.dispositif_id || ''} — ${x.erreur}`, x.details ? el('br') : null, x.details ? el('small', {}, [].concat(x.details).map((d) => (d.message ? `${d.chemin} ${d.message}` : d)).join(' ; ')) : null))));
+      if (r.compte_rendu) add(sortie, el('h3', {}, 'Compte rendu de l’assistant'), el('p', {}, r.compte_rendu));
+    } catch (e) { add(sortie, msg(e.message, true)); }
+  };
+  add(zone, el('h2', {}, 'Mise à jour avec un assistant IA (Copilot ou autre)'),
+    el('p', {}, 'Le pack est un fichier unique, autoporteur : il explique à quoi il sert, son format, les règles à respecter, contient les données actuelles des Pays de la Loire et la liste de ce qu’il reste à documenter. Vous le donnez à un assistant IA ayant accès au web ; il renvoie le même fichier avec ses propositions. Rien n’est appliqué automatiquement : chaque proposition passe par la file de validation avec le tableau avant/après.'),
+    el('h3', {}, '1. Télécharger le pack'),
+    el('a', { class: 'lien-bouton principal-lien', href: '/api/admin/pack', download: '' }, 'Télécharger le pack (Pays de la Loire)'),
+    el('h3', {}, '2. Donner le fichier à l’assistant avec cette consigne'),
+    el('textarea', { readonly: 'readonly', rows: '5', 'aria-label': 'Consigne à copier' }, CONSIGNE),
+    el('div', { class: 'ligne-actions' }, el('button', { type: 'button', class: 'secondaire', onClick: async () => { try { await navigator.clipboard.writeText(CONSIGNE); } catch { /* copie impossible : sélectionner le texte à la main */ } } }, 'Copier la consigne')),
+    el('h3', {}, '3. Importer sa réponse'),
+    el('label', { for: 'fichier-pack' }, 'Fichier renvoyé par l’assistant : '), fichier,
+    el('label', { for: 'texte-pack' }, 'ou texte collé :'), texte,
+    el('div', { class: 'ligne-actions' }, el('button', { type: 'button', class: 'principal', onClick: importer }, 'Importer les propositions')),
+    sortie);
+}
+
 // ---------- Onglets ----------
-const vues = { propositions: vuePropositions, couverture: vueCouverture, journal: vueJournal };
+const vues = { propositions: vuePropositions, couverture: vueCouverture, pack: vuePack, journal: vueJournal };
 function activer(nom) {
   for (const b of document.querySelectorAll('.onglets button')) b.setAttribute('aria-selected', String(b.dataset.onglet === nom));
   vues[nom](racine);

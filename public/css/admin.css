@@ -16,3 +16,5 @@
 .oui { color: var(--ok); font-weight: 600; } .non { color: var(--alerte); font-weight: 600; }
 .ligne-actions { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
 .ligne-actions input { flex: 1; min-width: 200px; width: auto; }
+.principal-lien { display: inline-block; background: var(--bleu-institutionnel); border-color: var(--bleu-institutionnel); text-decoration: none; }
+#admin textarea { width: 100%; font: inherit; }

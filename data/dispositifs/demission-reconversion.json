@@ -5,12 +5,31 @@
   ],
   "ce_qui_est_finance": null,
   "montant_ou_plafond": null,
-  "statut": "actif",
+  "statut": "modifie",
   "portee_geographique": "national",
   "regions_concernees": [],
   "declinaison_regionale": true,
   "acteur_regional": "transitions_pro",
-  "specificites_regionales": {},
+  "specificites_regionales": {
+    "52": {
+      "statut": "actif",
+      "sources": [
+        {
+          "url": "https://www.transitionspro-pdl.fr/je-suis-un-e-salarie-e/dispositif-demissionnaire-salarie-e/",
+          "intitule": "Dispositif démissionnaire",
+          "organisme": "Transitions Pro Pays de la Loire",
+          "date_consultation": "2026-10-07"
+        }
+      ],
+      "resume": "En Pays de la Loire, la demande d’attestation de caractère réel et sérieux du projet est déposée auprès de Transitions Pro Pays de la Loire depuis l’espace personnel du site, avec un exposé du projet saisi en ligne. Transitions Pro dispose de deux mois pour statuer une fois le dossier complet ; inscription à France Travail dans les 6 mois suivant l’attestation, mise en œuvre du projet dans les 6 mois suivant l’inscription. Un entretien préalable avec un conseiller en évolution professionnelle est obligatoire.",
+      "montants_conditions": "Conditions nationales : CDI du secteur privé, 5 ans d’activité sur les 60 derniers mois. Le droit à l’allocation est validé par France Travail, pas par l’attestation.",
+      "contact": {
+        "organisme": "Transitions Pro Pays de la Loire",
+        "url": "https://www.transitionspro-pdl.fr/"
+      },
+      "date_derniere_verification": "2026-10-07"
+    }
+  },
   "id": "demission-reconversion",
   "nom": "Démission-reconversion",
   "categorie": "transitions_pro",
@@ -64,6 +83,13 @@
       "action": "creation",
       "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
       "auteur": "Claude (étape c)"
+    },
+    {
+      "date": "2026-10-07",
+      "action": "modification",
+      "resume": "Modalités d’instruction par Transitions Pro Pays de la Loire",
+      "auteur": "claude-etape-g",
+      "region": "52"
     }
   ]
 }

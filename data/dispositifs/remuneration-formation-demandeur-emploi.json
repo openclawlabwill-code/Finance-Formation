@@ -6,12 +6,31 @@
   ],
   "ce_qui_est_finance": null,
   "montant_ou_plafond": null,
-  "statut": "actif",
+  "statut": "modifie",
   "portee_geographique": "national",
   "regions_concernees": [],
   "declinaison_regionale": false,
   "acteur_regional": null,
-  "specificites_regionales": {},
+  "specificites_regionales": {
+    "52": {
+      "statut": "actif",
+      "sources": [
+        {
+          "url": "https://www.paysdelaloire.fr/formation-et-emploi/formation-professionnelle/financer-son-parcours-de-formation-professionnelle",
+          "intitule": "Financer son parcours de formation professionnelle",
+          "organisme": "Région Pays de la Loire",
+          "date_consultation": "2026-10-07"
+        }
+      ],
+      "resume": "La Région Pays de la Loire rémunère les stagiaires de la formation professionnelle continue demandeurs d’emploi non indemnisés par France Travail (assiduité obligatoire, retenues en cas d’absence, remboursement en cas d’abandon sans motif légitime ou de renvoi pour faute lourde ; 10 500 stagiaires rémunérés en 2025). Un fonds social régional d’urgence aide les stagiaires confrontés à une situation d’urgence survenue après l’entrée en formation (panne de véhicule, garde d’enfant, logement…).",
+      "montants_conditions": "Aucun montant indiqué sur la page consultée.",
+      "contact": {
+        "organisme": "Région Pays de la Loire",
+        "url": "https://www.paysdelaloire.fr/"
+      },
+      "date_derniere_verification": "2026-10-07"
+    }
+  },
   "id": "remuneration-formation-demandeur-emploi",
   "nom": "Rémunération pendant la formation d’un demandeur d’emploi (ARE-F, RFF, RFFT, RSFP)",
   "categorie": "france_travail",
@@ -49,6 +68,13 @@
       "action": "creation",
       "resume": "Création initiale à partir des pages officielles consultées le 2026-10-07.",
       "auteur": "Claude (étape c)"
+    },
+    {
+      "date": "2026-10-07",
+      "action": "modification",
+      "resume": "Rémunération régionale des stagiaires et fonds social d’urgence (site de la Région)",
+      "auteur": "claude-etape-g",
+      "region": "52"
     }
   ]
 }

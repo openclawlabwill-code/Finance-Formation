@@ -59,3 +59,21 @@ test('région non documentée : les dispositifs à déclinaison régionale affic
   assert.equal(ptp.region_documentee, false);
   assert.match(ptp.message_regional, /Déclinaison régionale non documentée : contacter/);
 });
+
+test('Pays de la Loire : spécificités documentées affichées, reste « non documenté », aucune extrapolation vers une autre région', async () => {
+  const sources = await store.sources(), regions = await store.regions();
+  const pdl = dispositifsPourRegion(dispositifs, '52', { sources, regions });
+  const get = (id, l = pdl) => l.find((d) => d.id === id).regional;
+  assert.equal(get('demission-reconversion').documentee, true);
+  assert.match(get('demission-reconversion').specificite.resume, /Transitions Pro Pays de la Loire/);
+  assert.equal(get('programme-regional-formation').documentee, true);
+  assert.equal(get('ptp').documentee, false, 'spécificité à vérifier : pas présentée comme confirmée');
+  assert.match(get('ptp').message, /contacter Transitions Pro Pays de la Loire/);
+  assert.equal(get('ptp').contact.url, 'https://www.transitionspro-pdl.fr/');
+  assert.equal(get('cap-emploi').documentee, false);
+  const idf = dispositifsPourRegion(dispositifs, '11', { sources, regions });
+  assert.equal(get('demission-reconversion', idf).documentee, false, 'jamais reprise pour une autre région');
+  assert.equal(get('demission-reconversion', idf).specificite, null);
+  const pb = (await store.regions()).find((r) => r.code === '52');
+  assert.equal(pb.site_conseil_regional.url, 'https://www.paysdelaloire.fr/');
+});
