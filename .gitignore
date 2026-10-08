@@ -6,3 +6,7 @@ data/propositions/*.json
 data/journal-maj.log
 !data/**/.gitkeep
 .DS_Store
+node.exe
+runtime/
+*.zip
+*.tgz

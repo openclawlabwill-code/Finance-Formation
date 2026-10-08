@@ -10,7 +10,8 @@ Toutes les informations sont **indicatives** : chaque fiche rappelle « Informat
 
 Prérequis : **Node.js 20 ou plus récent** (https://nodejs.org, version LTS). Aucune dépendance à installer : pas de `npm install`.
 
-- **Windows** : décompresser le dossier, puis double-cliquer sur `demarrer.bat`. Le navigateur s'ouvre sur http://localhost:3000. Laisser la fenêtre noire ouverte ; la fermer arrête le serveur.
+- **Windows, sans installation** : décompresser `FinanceForma-Windows.zip` (il contient Node.js 24.21.0 dans `runtime\`), puis double-cliquer sur `demarrer.bat`. Avec un Node.js déjà installé, `demarrer.bat` fonctionne aussi sans le dossier `runtime`.
+  Détails : Le navigateur s'ouvre sur http://localhost:3000. Laisser la fenêtre noire ouverte ; la fermer arrête le serveur.
 - **Mac / Linux** : dans un terminal, dans le dossier : `npm start`, puis ouvrir http://localhost:3000.
 
 Autres commandes : `npm test` (tests automatiques), `npm run valider` (valide tous les fichiers de données), `npm run verifier-liens` (teste les URL des sources), `npm run couverture` (régénère `docs/COUVERTURE_PAYS_DE_LA_LOIRE.md`).
