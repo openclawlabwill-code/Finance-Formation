@@ -16,3 +16,8 @@ test('écoute : échoue clairement quand aucun port n’est libre', async () => 
   await assert.rejects(ecouter(t, '127.0.0.1', p, 0), { code: 'EADDRINUSE' });
   await new Promise((r) => s.close(r));
 });
+
+test('écoute : un port interdit (EACCES, plages réservées Windows) fait passer au suivant', async () => {
+  const faux = { once(ev, f) { this.surErreur = f; }, removeListener() {}, listen(port, host, cb) { if (port < 3002) { const e = new Error('permission denied'); e.code = 'EACCES'; setImmediate(() => this.surErreur(e)); } else setImmediate(cb); } };
+  assert.equal(await ecouter(faux, '127.0.0.1', 3000), 3002);
+});
