@@ -10,9 +10,8 @@ Toutes les informations sont **indicatives** : chaque fiche rappelle « Informat
 
 Prérequis : **Node.js 20 ou plus récent** (https://nodejs.org, version LTS). Aucune dépendance à installer : pas de `npm install`.
 
-- **Windows, sans installation** : décompresser `FinanceForma-Windows.zip` (il contient Node.js 24.21.0 dans `runtime\`), puis double-cliquer sur `demarrer.bat`. Avec un Node.js déjà installé, `demarrer.bat` fonctionne aussi sans le dossier `runtime`.
-  Détails : Le navigateur s'ouvre sur http://localhost:3000. Laisser la fenêtre noire ouverte ; la fermer arrête le serveur.
-- **Mac / Linux** : dans un terminal, dans le dossier : `npm start`, puis ouvrir http://localhost:3000.
+- **Windows** : décompresser le dossier, puis double-cliquer sur `demarrer.bat`. Le navigateur s’ouvre sur http://127.0.0.1:3000 (ou le port libre suivant si 3000 est pris ; l’adresse exacte est affichée dans la fenêtre). Laisser la fenêtre noire ouverte ; la fermer arrête le serveur.
+- **Mac / Linux** : dans un terminal, dans le dossier : `npm start`, puis ouvrir http://127.0.0.1:3000.
 
 Autres commandes : `npm test` (tests automatiques), `npm run valider` (valide tous les fichiers de données), `npm run verifier-liens` (teste les URL des sources), `npm run couverture` (régénère `docs/COUVERTURE_PAYS_DE_LA_LOIRE.md`).
 
@@ -28,7 +27,7 @@ Configuration facultative : copier `.env.example` en `.env` (port, région par d
 
 ## Mettre à jour les données
 
-Les données sont des fichiers JSON dans `data/` (fiches dans `data/dispositifs/`) et `config/sources.json` (acteurs et sites officiels). Trois façons de les mettre à jour, la deuxième et la troisième passant par une **validation humaine** dans http://localhost:3000/admin :
+Les données sont des fichiers JSON dans `data/` (fiches dans `data/dispositifs/`) et `config/sources.json` (acteurs et sites officiels). Trois façons de les mettre à jour, la deuxième et la troisième passant par une **validation humaine** dans http://127.0.0.1:3000/admin :
 
 1. **À la main** : modifier le JSON, puis `npm run valider`. Une fiche exige des sources sur les domaines officiels listés dans `config/sources.json` (`domaines_autorises`).
 2. **Avec un assistant IA (Copilot ou autre), par fichier** : `/admin` → onglet « Pack pour assistant IA ». Télécharger le pack (un fichier JSON autoporteur : mode d'emploi, règles, données actuelles, liste de ce qui reste à documenter), le donner à l'assistant avec la consigne proposée, puis importer sa réponse (fichier ou texte collé). Les propositions arrivent dans la file de validation.
